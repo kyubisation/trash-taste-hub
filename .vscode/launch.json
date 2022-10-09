@@ -3,6 +3,22 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "YouTube Collector",
+      "request": "launch",
+      "runtimeArgs": ["collect"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "YouTube Aggregator",
+      "request": "launch",
+      "runtimeArgs": ["aggregate"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",
