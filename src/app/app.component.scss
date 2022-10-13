@@ -1,0 +1,45 @@
+mat-toolbar {
+  position: fixed;
+  inset: 0;
+  bottom: inherit;
+  z-index: 10;
+}
+
+.home {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  color: var(--tt-purple);
+  text-decoration: none;
+  background-color: white;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+  font-weight: bold;
+  font-size: xx-large;
+  padding-inline: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.home img {
+  height: var(--tt-navbar-height);
+}
+
+mat-sidenav-container {
+  position: absolute;
+  inset: 0;
+  inset-block-start: var(--tt-navbar-height);
+}
+
+mat-sidenav[role='navigation'] {
+  width: 15rem;
+}
+
+.icon {
+  height: 1em;
+  vertical-align: middle;
+}
+
+mat-sidenav-content {
+  padding: 1rem;
+  min-height: calc(100vh - var(--tt-navbar-height));
+}

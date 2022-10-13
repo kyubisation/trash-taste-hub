@@ -1,0 +1,7 @@
+<article class="trash-taste">
+  <h1>{{ trashTaste.title }}</h1>
+  <p>
+    <time [dateTime]="trashTaste.publishedAt">{{ trashTaste.publishedAt | intlDate }}</time>
+  </p>
+  <youtube-player [videoId]="trashTaste.id"></youtube-player>
+</article>

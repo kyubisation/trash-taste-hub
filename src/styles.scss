@@ -1,5 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
+
+:root {
+  --tt-purple: #571980;
+  --tt-navbar-height: 64px;
+
+  @media (max-width: 599px) {
+    --tt-navbar-height: 56px;
+  }
+}
+
+$trash-taste-palette: (
+  50: #f4e6f4,
+  100: #e4bfe4,
+  200: #d295d3,
+  300: #c06cc0,
+  400: #b14cb3,
+  500: #a32fa6,
+  600: #962ba0,
+  700: #842597,
+  800: #74218f,
+  900: #571980,
+  A100: #b388ff,
+  A200: #8747b0,
+  A400: #651fff,
+  A700: #270053,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  ),
+);
+
+$my-primary: mat.define-palette($trash-taste-palette, 900);
+$my-accent: mat.define-palette($trash-taste-palette, A200, A100, A400);
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+    ),
+  )
+);
+
+@include mat.all-component-themes($my-theme);
+
+// @include mat.typography-hierarchy($my-theme);
+
 html,
 body {
   height: 100%;
