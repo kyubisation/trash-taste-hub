@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "collect": {
+      "description": "Collect data from YouTube",
+      "factory": "./collector/index#collect"
+    },
+    "aggregate": {
+      "description": "Aggregate data into useable format",
+      "factory": "./aggregator/index#aggregate"
+    }
+  }
+}

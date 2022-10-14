@@ -1,0 +1,53 @@
+import { Channel } from './channel';
+import { Guest } from './guest';
+import { Video } from './video';
+
+// Guests<% for (const guest of guests) { %>
+const <%= guestVariable(guest) %>: Guest = {
+  id: '<%= guest.id %>',
+  name: '<%= guest.name %>',<% if (guest.youtube) { %>
+  youtube: '<%= guest.youtube %>',<% } %><% if (guest.twitch) { %>
+  twitch: '<%= guest.twitch %>',<% } %><% if (guest.tiktok) { %>
+  tiktok: '<%= guest.tiktok %>',<% } %><% if (guest.spotify) { %>
+  spotify: '<%= guest.spotify %>',<% } %><% if (guest.twitter) { %>
+  twitter: '<%= guest.twitter %>',<% } %><% if (guest.instagram) { %>
+  instagram: '<%= guest.instagram %>',<% } %>
+  videos: [],
+};<% } %>
+
+// Channels<% for (const channel of channels) { %>
+export const <%= channelVariable(channel) %>: Channel = {
+  id: '<%= channel.id %>',
+  name: '<%= channel.name %>',
+  videos: []
+};
+
+// Channel <%= channel.name %> Videos<% for (const video of channel.videos) { %>
+const <%= videoVariable(video) %>: Video = {
+  id: '<%= video.id %>',
+  channel: <%= channelVariable(channel) %>,
+  title: '<%= escapeQuote(video.title) %>',<% if (video.titleShort) { %>
+  titleShort: '<%= escapeQuote(video.titleShort) %>',<% } %><% if (video.episodeNumber) { %>
+  episodeNumber: <%= video.episodeNumber %>,<% } %>
+  publishedAt: '<%= video.publishedAt %>',<% if (video.sections) { %>
+  sections: {<% for (const [key, value] of Object.entries(video.sections)) { %>
+    '<%= key %>': '<%= escapeQuote(value) %>',<% } %>
+  },<% } %><% if (video.guests) { %>
+  guests: [<% for (const guest of video.guests) { %>
+    <%= guestVariable(guest) %>,<% } %>
+  ],<% } %><% if (video.tags) { %>
+  tags: [<% for (const tag of video.tags) { %>
+    '<%= escapeQuote(tag) %>',<% } %>
+  ],<% } %><% if (video.type) { %>
+  type: '<%= video.type %>',<% } %>
+};
+<%= channelVariable(channel) %>.videos.push(<%= videoVariable(video) %>);<% for (const guest of (video.guests ?? [])) { %>
+<%= guestVariable(guest) %>.videos.push(<%= videoVariable(video) %>);<% } %>
+<% } %>
+<% } %>
+
+// Exports
+export const channels: Channel[] = [<%= channels.map(channelVariable).join(', ') %>];
+export const guests: Guest[] = [<% for (const guest of guests) { %>
+  <%= guestVariable(guest) %>,<% } %>
+];

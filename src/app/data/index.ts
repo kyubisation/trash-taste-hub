@@ -176,6 +176,8 @@ const videouNDjVH5qiyM: Video = {
   id: 'uNDjVH5qiyM',
   channel: channelTrashTaste,
   title: 'The Worst Anime Podcast Has Arrived | Trash Taste #1',
+  titleShort: 'The Worst Anime Podcast Has Arrived',
+  episodeNumber: 1,
   publishedAt: '2020-06-05T20:00:17Z',
   tags: ['Attack On Titan', 'Emails', 'Funny', 'Anime YouTubers'],
 };
@@ -185,6 +187,8 @@ const video3E0JIBNlmco: Video = {
   id: '3E0JIBNlmco',
   channel: channelTrashTaste,
   title: 'The Struggles of Life in Japan | Trash Taste #2',
+  titleShort: 'The Struggles of Life in Japan',
+  episodeNumber: 2,
   publishedAt: '2020-06-12T20:00:02Z',
   sections: {
     '0:00': 'Intro, Garnts birthday and wine.',
@@ -231,6 +235,8 @@ const video5d3nhRaMBhI: Video = {
   id: '5d3nhRaMBhI',
   channel: channelTrashTaste,
   title: 'The Anime That Shaped Our Childhoods | Trash Taste #3',
+  titleShort: 'The Anime That Shaped Our Childhoods',
+  episodeNumber: 3,
   publishedAt: '2020-06-19T20:00:00Z',
 };
 channelTrashTaste.videos.push(video5d3nhRaMBhI);
@@ -239,6 +245,8 @@ const videoDvMLVjPk2Io: Video = {
   id: 'DvMLVjPk2Io',
   channel: channelTrashTaste,
   title: 'How to NOT Buy Anime Figures | Trash Taste #4',
+  titleShort: 'How to NOT Buy Anime Figures',
+  episodeNumber: 4,
   publishedAt: '2020-06-26T20:00:01Z',
   tags: ['How', 'to', 'NOT', 'Buy', 'Figures', 'Akihabara'],
 };
@@ -248,6 +256,8 @@ const videovEtlC9Sl4_Q: Video = {
   id: 'vEtlC9Sl4_Q',
   channel: channelTrashTaste,
   title: "Don't Be a YouTuber in Japan (ft. Abroad in Japan) | Trash Taste #5",
+  titleShort: "Don't Be a YouTuber in Japan",
+  episodeNumber: 5,
   publishedAt: '2020-07-03T20:00:08Z',
   guests: [guestAbroadinJapan],
   tags: ['Abroad in Japan', 'Chris Broad'],
@@ -259,6 +269,8 @@ const videodgZDICFDY5o: Video = {
   id: 'dgZDICFDY5o',
   channel: channelTrashTaste,
   title: "Don't Watch Anime to Learn Japanese | Trash Taste #6",
+  titleShort: "Don't Watch Anime to Learn Japanese",
+  episodeNumber: 6,
   publishedAt: '2020-07-10T20:00:08Z',
   tags: ["Don't", 'Watch', 'to', 'Learn', 'Japanese'],
 };
@@ -268,6 +280,8 @@ const videoSOOPOMAueUA: Video = {
   id: 'SOOPOMAueUA',
   channel: channelTrashTaste,
   title: 'The Internet Kinda Sucks Right Now | Trash Taste #7',
+  titleShort: 'The Internet Kinda Sucks Right Now',
+  episodeNumber: 7,
   publishedAt: '2020-07-17T20:00:45Z',
   tags: ['The', 'Internet', 'Kinda', 'Sucks', 'Right', 'Now'],
 };
@@ -277,6 +291,8 @@ const videofR7FQv8PaVk: Video = {
   id: 'fR7FQv8PaVk',
   channel: channelTrashTaste,
   title: "We Don't Understand Anime Games | Trash Taste #8",
+  titleShort: "We Don't Understand Anime Games",
+  episodeNumber: 8,
   publishedAt: '2020-07-24T20:00:06Z',
 };
 channelTrashTaste.videos.push(videofR7FQv8PaVk);
@@ -285,6 +301,8 @@ const videodKBT8Vh9yl8: Video = {
   id: 'dKBT8Vh9yl8',
   channel: channelTrashTaste,
   title: "Japan's Earthquakes Are Terrifying | Trash Taste #9",
+  titleShort: "Japan's Earthquakes Are Terrifying",
+  episodeNumber: 9,
   publishedAt: '2020-07-31T20:00:08Z',
   tags: ['Japans', 'Earthquakes', 'Are', 'Terrifying', 'Japan Sinks 2020'],
 };
@@ -294,6 +312,8 @@ const video0ei80_jPw4c: Video = {
   id: '0ei80_jPw4c',
   channel: channelTrashTaste,
   title: 'Our Dark Past with Anime YouTube | Trash Taste #10',
+  titleShort: 'Our Dark Past with Anime YouTube',
+  episodeNumber: 10,
   publishedAt: '2020-08-07T19:00:00Z',
   tags: ['Our', 'Dark', 'Past', 'with', 'YouTubers'],
 };
@@ -303,6 +323,8 @@ const videomLZHgpFOYt4: Video = {
   id: 'mLZHgpFOYt4',
   channel: channelTrashTaste,
   title: 'Sitting Down with an Ex-Japanese 𝒫ó𝓇𝓃𝓈𝓉à𝓇 (ft. Shibuya Kaho) | Trash Taste #11',
+  titleShort: 'Sitting Down with an Ex-Japanese 𝒫ó𝓇𝓃𝓈𝓉à𝓇',
+  episodeNumber: 11,
   publishedAt: '2020-08-14T20:00:05Z',
   guests: [guestShibuyaKaho],
 };
@@ -313,6 +335,8 @@ const videoGMCxI2KJp3Y: Video = {
   id: 'GMCxI2KJp3Y',
   channel: channelTrashTaste,
   title: 'College Horror Stories | Trash Taste #12',
+  titleShort: 'College Horror Stories',
+  episodeNumber: 12,
   publishedAt: '2020-08-21T20:00:01Z',
   tags: ['College', 'Horror', 'Stories', 'University'],
 };
@@ -322,8 +346,10 @@ const videoM7D6mwcssuM: Video = {
   id: 'M7D6mwcssuM',
   channel: channelTrashTaste,
   title: 'The Chess Tournament Arc | Trash Taste Special',
+  titleShort: 'The Chess Tournament Arc',
   publishedAt: '2020-08-25T20:00:03Z',
   tags: ['Chess', 'Tournament', 'Arc', 'Trash Taste Special'],
+  type: 'special',
 };
 channelTrashTaste.videos.push(videoM7D6mwcssuM);
 
@@ -331,6 +357,8 @@ const videosUlzvH1R6ng: Video = {
   id: 'sUlzvH1R6ng',
   channel: channelTrashTaste,
   title: 'Uncovering Secrets Behind Anime Piracy | Trash Taste #13',
+  titleShort: 'Uncovering Secrets Behind Anime Piracy',
+  episodeNumber: 13,
   publishedAt: '2020-08-28T20:00:05Z',
 };
 channelTrashTaste.videos.push(videosUlzvH1R6ng);
@@ -339,6 +367,8 @@ const videod_gHqu67j00: Video = {
   id: 'd-gHqu67j00',
   channel: channelTrashTaste,
   title: 'The Most BORING Anime | Trash Taste #14',
+  titleShort: 'The Most BORING Anime',
+  episodeNumber: 14,
   publishedAt: '2020-09-04T20:00:08Z',
 };
 channelTrashTaste.videos.push(videod_gHqu67j00);
@@ -347,6 +377,8 @@ const video5LBYddiLLP4: Video = {
   id: '5LBYddiLLP4',
   channel: channelTrashTaste,
   title: 'The REAL Japanese Nightlife Experience | Trash Taste #15',
+  titleShort: 'The REAL Japanese Nightlife Experience',
+  episodeNumber: 15,
   publishedAt: '2020-09-11T20:00:00Z',
 };
 channelTrashTaste.videos.push(video5LBYddiLLP4);
@@ -355,6 +387,8 @@ const videoDbg8lT53Arg: Video = {
   id: 'Dbg8lT53Arg',
   channel: channelTrashTaste,
   title: 'The WORST Fandoms in Anime | Trash Taste #16',
+  titleShort: 'The WORST Fandoms in Anime',
+  episodeNumber: 16,
   publishedAt: '2020-09-18T20:00:01Z',
   tags: [
     'The',
@@ -374,6 +408,8 @@ const videopxhJIRpLrPE: Video = {
   id: 'pxhJIRpLrPE',
   channel: channelTrashTaste,
   title: "The Japanese Food You've Never Tried | Trash Taste #17",
+  titleShort: "The Japanese Food You've Never Tried",
+  episodeNumber: 17,
   publishedAt: '2020-09-25T20:00:09Z',
   tags: ['The', 'Japanese', 'Food', "You've", 'Never', 'Tried'],
 };
@@ -383,6 +419,8 @@ const videoEswetmwVvtQ: Video = {
   id: 'EswetmwVvtQ',
   channel: channelTrashTaste,
   title: "We've Fallen Down the Vtuber Rabbit Hole | Trash Taste #18",
+  titleShort: "We've Fallen Down the Vtuber Rabbit Hole",
+  episodeNumber: 18,
   publishedAt: '2020-10-02T20:00:02Z',
   tags: [
     'We’ve',
@@ -402,6 +440,8 @@ const videozyuwyIrw1pQ: Video = {
   id: 'zyuwyIrw1pQ',
   channel: channelTrashTaste,
   title: 'We Need a Break From YouTube | Trash Taste #19',
+  titleShort: 'We Need a Break From YouTube',
+  episodeNumber: 19,
   publishedAt: '2020-10-09T20:00:09Z',
   tags: ['We', 'Need', 'Break', 'From', 'YouTube', '19'],
 };
@@ -411,6 +451,8 @@ const videoDNDUe3oZygQ: Video = {
   id: 'DNDUe3oZygQ',
   channel: channelTrashTaste,
   title: 'Exposing Our Degenerate Side (ft. sydsnap) | Trash Taste #20',
+  titleShort: 'Exposing Our Degenerate Side',
+  episodeNumber: 20,
   publishedAt: '2020-10-16T21:51:47Z',
   guests: [guestsydsnap],
 };
@@ -421,6 +463,8 @@ const videonGx_x0jrE2o: Video = {
   id: 'nGx-x0jrE2o',
   channel: channelTrashTaste,
   title: 'Roasting our WORST Takes on Anime | Trash Taste #21',
+  titleShort: 'Roasting our WORST Takes on Anime',
+  episodeNumber: 21,
   publishedAt: '2020-10-23T20:00:05Z',
   tags: ['Roasting', 'our', 'WORST', 'Takes', 'on', 'Opinions'],
 };
@@ -430,8 +474,10 @@ const videosCcv9uqSBU0: Video = {
   id: 'sCcv9uqSBU0',
   channel: channelTrashTaste,
   title: 'We Tried Real Tokyo Drifting and FAILED | Trash Taste Special',
+  titleShort: 'We Tried Real Tokyo Drifting and FAILED',
   publishedAt: '2020-10-30T20:00:53Z',
   tags: ['Drifting', 'Ebisu Circuit'],
+  type: 'special',
 };
 channelTrashTaste.videos.push(videosCcv9uqSBU0);
 
@@ -439,6 +485,8 @@ const video1t1lme5nGZE: Video = {
   id: '1t1lme5nGZE',
   channel: channelTrashTaste,
   title: 'Anime Convention Horror Stories | Trash Taste #22',
+  titleShort: 'Anime Convention Horror Stories',
+  episodeNumber: 22,
   publishedAt: '2020-11-06T20:00:00Z',
   tags: ['Convention', 'Horror', 'Stories'],
 };
@@ -448,6 +496,8 @@ const videotIU0xG_lXkQ: Video = {
   id: 'tIU0xG-lXkQ',
   channel: channelTrashTaste,
   title: 'We Met a REAL Virtual YouTuber (ft. Mori Calliope) | Trash Taste #23',
+  titleShort: 'We Met a REAL Virtual YouTuber',
+  episodeNumber: 23,
   publishedAt: '2020-11-13T20:00:10Z',
   guests: [guestMoriCalliope],
   tags: ['Mori Calliope', 'Hololive', 'Virtual YouTuber', 'Vtuber', 'カリオペ'],
@@ -459,6 +509,8 @@ const videoXDhyFh0DPOA: Video = {
   id: 'XDhyFh0DPOA',
   channel: channelTrashTaste,
   title: "We're Too Addicted To The Internet | Trash Taste #24",
+  titleShort: "We're Too Addicted To The Internet",
+  episodeNumber: 24,
   publishedAt: '2020-11-20T20:00:06Z',
 };
 channelTrashTaste.videos.push(videoXDhyFh0DPOA);
@@ -467,6 +519,8 @@ const videoEmJDnyHDYuM: Video = {
   id: 'EmJDnyHDYuM',
   channel: channelTrashTaste,
   title: 'The ℌệ𝔫𝔱ằ𝔦 Episode | Trash Taste #25',
+  titleShort: 'The ℌệ𝔫𝔱ằ𝔦 Episode',
+  episodeNumber: 25,
   publishedAt: '2020-11-27T20:00:02Z',
 };
 channelTrashTaste.videos.push(videoEmJDnyHDYuM);
@@ -475,6 +529,8 @@ const videoog8CYLCRXeo: Video = {
   id: 'og8CYLCRXeo',
   channel: channelTrashTaste,
   title: 'Our Trash Taste in YouTubers | Trash Taste #26',
+  titleShort: 'Our Trash Taste in YouTubers',
+  episodeNumber: 26,
   publishedAt: '2020-12-04T20:00:10Z',
 };
 channelTrashTaste.videos.push(videoog8CYLCRXeo);
@@ -483,6 +539,8 @@ const video8_9wNeYiua8: Video = {
   id: '8-9wNeYiua8',
   channel: channelTrashTaste,
   title: 'The #1 Drifting YouTuber in Japan (ft. Noriyaro) | Trash Taste #27',
+  titleShort: 'The #1 Drifting YouTuber in Japan',
+  episodeNumber: 27,
   publishedAt: '2020-12-11T20:00:01Z',
   guests: [guestNoriyaro],
 };
@@ -493,6 +551,8 @@ const videoZk8QMtjnRj0: Video = {
   id: 'Zk8QMtjnRj0',
   channel: channelTrashTaste,
   title: 'Are Online Friends REAL Friends? | Trash Taste #28',
+  titleShort: 'Are Online Friends REAL Friends?',
+  episodeNumber: 28,
   publishedAt: '2020-12-18T20:00:06Z',
 };
 channelTrashTaste.videos.push(videoZk8QMtjnRj0);
@@ -501,6 +561,8 @@ const videoTBGk1TKhVeA: Video = {
   id: 'TBGk1TKhVeA',
   channel: channelTrashTaste,
   title: 'Christmas Horror Stories | Trash Taste #29',
+  titleShort: 'Christmas Horror Stories',
+  episodeNumber: 29,
   publishedAt: '2020-12-25T20:00:03Z',
 };
 channelTrashTaste.videos.push(videoTBGk1TKhVeA);
@@ -509,6 +571,8 @@ const videoURZHEqOMsU8: Video = {
   id: 'URZHEqOMsU8',
   channel: channelTrashTaste,
   title: 'A Very Drunk Start to the New Year (ft. Abroad in Japan) | Trash Taste #30',
+  titleShort: 'A Very Drunk Start to the New Year',
+  episodeNumber: 30,
   publishedAt: '2021-01-01T20:00:05Z',
   guests: [guestAbroadinJapan],
 };
@@ -519,6 +583,8 @@ const videojiK2jmTVF3A: Video = {
   id: 'jiK2jmTVF3A',
   channel: channelTrashTaste,
   title: 'Japan Is A Real Life Gacha Game | Trash Taste #31',
+  titleShort: 'Japan Is A Real Life Gacha Game',
+  episodeNumber: 31,
   publishedAt: '2021-01-08T20:00:29Z',
 };
 channelTrashTaste.videos.push(videojiK2jmTVF3A);
@@ -527,6 +593,8 @@ const videohdbTw4Oz45c: Video = {
   id: 'hdbTw4Oz45c',
   channel: channelTrashTaste,
   title: "We Don't Know How to Poop | Trash Taste #32",
+  titleShort: "We Don't Know How to Poop",
+  episodeNumber: 32,
   publishedAt: '2021-01-15T20:00:26Z',
 };
 channelTrashTaste.videos.push(videohdbTw4Oz45c);
@@ -535,6 +603,8 @@ const video38_9XUFTFzs: Video = {
   id: '38_9XUFTFzs',
   channel: channelTrashTaste,
   title: "We're Too Addicted to Gacha Games | Trash Taste #33",
+  titleShort: "We're Too Addicted to Gacha Games",
+  episodeNumber: 33,
   publishedAt: '2021-01-22T20:00:00Z',
   tags: ['Gacha', 'GACHA GAMES'],
 };
@@ -544,6 +614,8 @@ const videoPRR7LAis7_E: Video = {
   id: 'PRR7LAis7-E',
   channel: channelTrashTaste,
   title: 'Roasting Our Horrible Anime Tastes | Trash Taste #34',
+  titleShort: 'Roasting Our Horrible Anime Tastes',
+  episodeNumber: 34,
   publishedAt: '2021-01-29T20:00:11Z',
 };
 channelTrashTaste.videos.push(videoPRR7LAis7_E);
@@ -552,6 +624,8 @@ const videoFzbCKTMqlWM: Video = {
   id: 'FzbCKTMqlWM',
   channel: channelTrashTaste,
   title: 'We Have Trash Taste in Manga | Trash Taste #35',
+  titleShort: 'We Have Trash Taste in Manga',
+  episodeNumber: 35,
   publishedAt: '2021-02-05T20:00:03Z',
 };
 channelTrashTaste.videos.push(videoFzbCKTMqlWM);
@@ -560,6 +634,8 @@ const videoz9ulkFRXkvQ: Video = {
   id: 'z9ulkFRXkvQ',
   channel: channelTrashTaste,
   title: 'Talking to a REAL JoJo Animator (ft. Ken Arto) | Trash Taste #36',
+  titleShort: 'Talking to a REAL JoJo Animator',
+  episodeNumber: 36,
   publishedAt: '2021-02-12T20:00:11Z',
   guests: [guestKenArto],
 };
@@ -570,6 +646,8 @@ const video8NtHmr0xOrM: Video = {
   id: '8NtHmr0xOrM',
   channel: channelTrashTaste,
   title: 'How to NOT Flirt with a YouTuber | Trash Taste #37',
+  titleShort: 'How to NOT Flirt with a YouTuber',
+  episodeNumber: 37,
   publishedAt: '2021-02-19T20:00:02Z',
   tags: ['Connor presentation'],
 };
@@ -579,8 +657,10 @@ const videoBEzKwYTQX2s: Video = {
   id: 'BEzKwYTQX2s',
   channel: channelTrashTaste,
   title: 'We Tried Cycling Across Japan and FAILED | Trash Taste Special',
+  titleShort: 'We Tried Cycling Across Japan and FAILED',
   publishedAt: '2021-02-26T20:00:15Z',
   tags: ['Special', 'cycling'],
+  type: 'special',
 };
 channelTrashTaste.videos.push(videoBEzKwYTQX2s);
 
@@ -588,6 +668,8 @@ const videohbEmKBN2HKs: Video = {
   id: 'hbEmKBN2HKs',
   channel: channelTrashTaste,
   title: 'Talking to a REAL Japanese Anime Singer (ft. Nano) | Trash Taste #38',
+  titleShort: 'Talking to a REAL Japanese Anime Singer',
+  episodeNumber: 38,
   publishedAt: '2021-03-05T20:00:07Z',
   sections: {
     '00:00': 'Who is Nano',
@@ -639,6 +721,8 @@ const video6AILeSMxtiU: Video = {
   id: '6AILeSMxtiU',
   channel: channelTrashTaste,
   title: 'THINGS THAT TERRIFY US | Trash Taste #39',
+  titleShort: 'THINGS THAT TERRIFY US',
+  episodeNumber: 39,
   publishedAt: '2021-03-12T20:00:04Z',
   sections: {
     '00:00': 'Intro',
@@ -695,6 +779,8 @@ const videovrB4p_n1Ta8: Video = {
   id: 'vrB4p-n1Ta8',
   channel: channelTrashTaste,
   title: 'The WORST Japanese Convenience Store Food | Trash Taste #40',
+  titleShort: 'The WORST Japanese Convenience Store Food',
+  episodeNumber: 40,
   publishedAt: '2021-03-19T19:15:32Z',
   sections: {
     '00:00': 'intro',
@@ -749,6 +835,8 @@ const videoESTvga3alco: Video = {
   id: 'ESTvga3alco',
   channel: channelTrashTaste,
   title: 'The YouTuber Life is CURSED | Trash Taste #41',
+  titleShort: 'The YouTuber Life is CURSED',
+  episodeNumber: 41,
   publishedAt: '2021-03-26T19:00:02Z',
   sections: {
     '00:00': 'Frail intro',
@@ -806,6 +894,8 @@ const videoxqurcPbqKs4: Video = {
   id: 'xqurcPbqKs4',
   channel: channelTrashTaste,
   title: 'Exposing the Truth of YouTube (ft. @akidearest) | Trash Taste #42',
+  titleShort: 'Exposing the Truth of YouTube',
+  episodeNumber: 42,
   publishedAt: '2021-04-02T20:00:08Z',
   sections: {
     '00:00': 'Fire intro',
@@ -869,6 +959,8 @@ const videocuYit0asYhc: Video = {
   id: 'cuYit0asYhc',
   channel: channelTrashTaste,
   title: 'Our Trash Taste In TV | Trash Taste #43',
+  titleShort: 'Our Trash Taste In TV',
+  episodeNumber: 43,
   publishedAt: '2021-04-09T20:00:12Z',
   sections: {
     '00:00': 'Connor shits on his phone',
@@ -921,6 +1013,8 @@ const videojePOmeSAgdg: Video = {
   id: 'jePOmeSAgdg',
   channel: channelTrashTaste,
   title: 'Sitting Down with a Pro Cross-Dressing Idol Wrestler (ft. Ladybeard) | Trash Taste #44',
+  titleShort: 'Sitting Down with a Pro Cross-Dressing Idol Wrestler',
+  episodeNumber: 44,
   publishedAt: '2021-04-16T20:00:08Z',
   sections: {
     '00:00': 'Smashing intro',
@@ -992,6 +1086,8 @@ const videoWzc8_GZDSR0: Video = {
   id: 'Wzc8_GZDSR0',
   channel: channelTrashTaste,
   title: 'Roasting our Terrible Taste in Games | Trash Taste #45',
+  titleShort: 'Roasting our Terrible Taste in Games',
+  episodeNumber: 45,
   publishedAt: '2021-04-23T20:00:06Z',
   sections: {
     '00:00:00': 'Rise up gamers',
@@ -1067,6 +1163,8 @@ const videoEpPbObPhozs: Video = {
   id: 'EpPbObPhozs',
   channel: channelTrashTaste,
   title: "Let's Just JUMP Right Into It (ft. Reina Scully) | Trash Taste #46",
+  titleShort: "Let's Just JUMP Right Into It",
+  episodeNumber: 46,
   publishedAt: '2021-04-30T20:00:05Z',
   sections: {
     '00:00:00': 'Connor is the host today',
@@ -1136,6 +1234,8 @@ const videoOpAHNHFfWH4: Video = {
   id: 'OpAHNHFfWH4',
   channel: channelTrashTaste,
   title: "We Don't Understand Live Streamers | Trash Taste #47",
+  titleShort: "We Don't Understand Live Streamers",
+  episodeNumber: 47,
   publishedAt: '2021-05-07T20:00:06Z',
   sections: {
     '00:00:00': 'Poopoo intro',
@@ -1194,6 +1294,8 @@ const videop6JEsEmtsds: Video = {
   id: 'p6JEsEmtsds',
   channel: channelTrashTaste,
   title: 'Do We Drink Too Much?? | Trash Taste #48',
+  titleShort: 'Do We Drink Too Much??',
+  episodeNumber: 48,
   publishedAt: '2021-05-14T20:00:19Z',
   sections: {
     '00:00:00': 'Tasty intro',
@@ -1262,6 +1364,8 @@ const video7vIbh4yLxtA: Video = {
   id: '7vIbh4yLxtA',
   channel: channelTrashTaste,
   title: 'The Worst Things You Can Do in Japan | Trash Taste #49',
+  titleShort: 'The Worst Things You Can Do in Japan',
+  episodeNumber: 49,
   publishedAt: '2021-05-21T21:00:05Z',
   sections: {
     '00:00:00': 'Meilyne time',
@@ -1321,6 +1425,8 @@ const video3aM1rVv2T3o: Video = {
   id: '3aM1rVv2T3o',
   channel: channelTrashTaste,
   title: 'The Trash Taste Awards | Trash Taste #50',
+  titleShort: 'The Trash Taste Awards',
+  episodeNumber: 50,
   publishedAt: '2021-05-28T20:00:12Z',
   sections: {
     '00:00:00': 'Welcome to Trash Taste Awardw',
@@ -1365,6 +1471,8 @@ const video1gHPFmjj28A: Video = {
   id: '1gHPFmjj28A',
   channel: channelTrashTaste,
   title: "We've Had Enough of Japan | Trash Taste #51",
+  titleShort: "We've Had Enough of Japan",
+  episodeNumber: 51,
   publishedAt: '2021-06-04T20:00:00Z',
   sections: {
     '00:00:00': 'Joey moistens the boys',
@@ -1417,6 +1525,8 @@ const videoPa_KjzmZgBk: Video = {
   id: 'Pa_KjzmZgBk',
   channel: channelTrashTaste,
   title: "We Can't Stop Giving Bad Opinions | Trash Taste #52",
+  titleShort: "We Can't Stop Giving Bad Opinions",
+  episodeNumber: 52,
   publishedAt: '2021-06-11T20:00:04Z',
   sections: {
     '00:00:00': 'A savage intro',
@@ -1475,6 +1585,8 @@ const video9Dl8PbibmBI: Video = {
   id: '9Dl8PbibmBI',
   channel: channelTrashTaste,
   title: 'We Read The WORST ℌệ𝔫𝔱ằ𝔦 Doujins | Trash Taste #53',
+  titleShort: 'We Read The WORST ℌệ𝔫𝔱ằ𝔦 Doujins',
+  episodeNumber: 53,
   publishedAt: '2021-06-18T20:59:29Z',
   sections: {
     '00:00:00': 'Watch on Patreon to see EVERYTHING',
@@ -1546,6 +1658,8 @@ const videofUF29xWCjXM: Video = {
   id: 'fUF29xWCjXM',
   channel: channelTrashTaste,
   title: 'Goodbye Trash Taste Season 1 | Trash Taste #54',
+  titleShort: 'Goodbye Trash Taste Season 1',
+  episodeNumber: 54,
   publishedAt: '2021-06-25T20:00:07Z',
   sections: {
     '00:00:00': 'Intro manoeuvre',
@@ -1590,7 +1704,9 @@ const videos5g2z4a9M3s: Video = {
   id: 's5g2z4a9M3s',
   channel: channelTrashTaste,
   title: 'Trash Taste PC Building Speedrun | Trash Taste Special',
+  titleShort: 'Trash Taste PC Building Speedrun',
   publishedAt: '2021-06-28T19:00:09Z',
+  type: 'special',
 };
 channelTrashTaste.videos.push(videos5g2z4a9M3s);
 
@@ -1598,6 +1714,8 @@ const videovFbY_xLhLd0: Video = {
   id: 'vFbY_xLhLd0',
   channel: channelTrashTaste,
   title: 'Welcome to Trash Taste Season 2 | Trash Taste #55',
+  titleShort: 'Welcome to Trash Taste Season 2',
+  episodeNumber: 55,
   publishedAt: '2021-07-02T20:00:28Z',
   sections: {
     '00:00:00': 'Season 2 starts now',
@@ -1646,6 +1764,8 @@ const videojFIKDHetyFw: Video = {
   id: 'jFIKDHetyFw',
   channel: channelTrashTaste,
   title: '100 WAYS TO DIE IN JAPAN (ft. Abroad in Japan) | Trash Taste #56',
+  titleShort: '100 WAYS TO DIE IN JAPAN',
+  episodeNumber: 56,
   publishedAt: '2021-07-09T20:00:10Z',
   sections: {
     '00:00:00': 'Apex Raid of Shadows',
@@ -1713,6 +1833,8 @@ const videoMhPRmgX_gAw: Video = {
   id: 'MhPRmgX_gAw',
   channel: channelTrashTaste,
   title: "Proving We're Actually an Anime Podcast | Trash Taste #57",
+  titleShort: "Proving We're Actually an Anime Podcast",
+  episodeNumber: 57,
   publishedAt: '2021-07-16T20:00:03Z',
   sections: {
     '00:00:00': "Don't cheat on your husband",
@@ -1763,6 +1885,8 @@ const videoADOjGd0_5O0: Video = {
   id: 'ADOjGd0_5O0',
   channel: channelTrashTaste,
   title: 'Talking to a REAL Japanese Anime Voice Actor (ft. Shu Uchida) | Trash Taste #58',
+  titleShort: 'Talking to a REAL Japanese Anime Voice Actor',
+  episodeNumber: 58,
   publishedAt: '2021-07-23T20:00:02Z',
   sections: {
     '00:00:00': 'Voicing an intro',
@@ -1821,6 +1945,8 @@ const videoS_CSPYo0Nxo: Video = {
   id: 'S-CSPYo0Nxo',
   channel: channelTrashTaste,
   title: 'The Biggest Scandal in Anime History | Trash Taste #59',
+  titleShort: 'The Biggest Scandal in Anime History',
+  episodeNumber: 59,
   publishedAt: '2021-07-30T20:00:11Z',
   sections: {
     '00:00:00': 'The worst superpower',
@@ -1864,6 +1990,8 @@ const videoIHW3TauaL0E: Video = {
   id: 'IHW3TauaL0E',
   channel: channelTrashTaste,
   title: 'Roasting our Terrible Taste in Movies | Trash Taste #60',
+  titleShort: 'Roasting our Terrible Taste in Movies',
+  episodeNumber: 60,
   publishedAt: '2021-08-06T20:00:02Z',
   sections: {
     '00:00:00': 'Content starts now',
@@ -1917,6 +2045,8 @@ const video6wLBE3b_3jU: Video = {
   id: '6wLBE3b_3jU',
   channel: channelTrashTaste,
   title: 'Roasting our Trash Taste in Manga | Trash Taste #61',
+  titleShort: 'Roasting our Trash Taste in Manga',
+  episodeNumber: 61,
   publishedAt: '2021-08-13T20:00:01Z',
   sections: {
     '00:00:00': 'start',
@@ -1970,6 +2100,8 @@ const video398hQfZ5Ljg: Video = {
   id: '398hQfZ5Ljg',
   channel: channelTrashTaste,
   title: 'Our Terrible Boomer Opinions | Trash Taste #62',
+  titleShort: 'Our Terrible Boomer Opinions',
+  episodeNumber: 62,
   publishedAt: '2021-08-20T20:00:30Z',
   sections: {
     '00:00:00': 'MUGS',
@@ -2013,6 +2145,8 @@ const video8TGJf8l_XXU: Video = {
   id: '8TGJf8l-XXU',
   channel: channelTrashTaste,
   title: 'Summer In Japan IS HELL | Trash Taste #63',
+  titleShort: 'Summer In Japan IS HELL',
+  episodeNumber: 63,
   publishedAt: '2021-08-27T20:00:02Z',
   sections: {
     '00:00:00': "It's too hot",
@@ -2056,6 +2190,8 @@ const videooWHbkpJKwxY: Video = {
   id: 'oWHbkpJKwxY',
   channel: channelTrashTaste,
   title: 'We Hate Our Fans | Trash Taste #64',
+  titleShort: 'We Hate Our Fans',
+  episodeNumber: 64,
   publishedAt: '2021-09-03T20:00:25Z',
   sections: {
     '00:00:00': "We're not good",
@@ -2099,6 +2235,8 @@ const video7ciUUFK3K14: Video = {
   id: '7ciUUFK3K14',
   channel: channelTrashTaste,
   title: 'We CANNOT Stop Arguing | Trash Taste #65',
+  titleShort: 'We CANNOT Stop Arguing',
+  episodeNumber: 65,
   publishedAt: '2021-09-10T20:17:16Z',
   sections: {
     '00:00:00': "You're not ready for what's to come",
@@ -2144,6 +2282,8 @@ const videopPmJeqnnxQI: Video = {
   id: 'pPmJeqnnxQI',
   channel: channelTrashTaste,
   title: 'We Got SCAMMED | Trash Taste #66',
+  titleShort: 'We Got SCAMMED',
+  episodeNumber: 66,
   publishedAt: '2021-09-17T20:00:09Z',
   sections: {
     '00:00:00': 'A musky intro',
@@ -2184,6 +2324,8 @@ const videoRm8nxEAzjYQ: Video = {
   id: 'Rm8nxEAzjYQ',
   channel: channelTrashTaste,
   title: 'EXPOSING Our Manager | Trash Taste #67',
+  titleShort: 'EXPOSING Our Manager',
+  episodeNumber: 67,
   publishedAt: '2021-09-24T20:00:13Z',
   sections: {
     '00:00:00': 'The worst fear',
@@ -2226,6 +2368,8 @@ const videoFciJamr2z1Q: Video = {
   id: 'FciJamr2z1Q',
   channel: channelTrashTaste,
   title: 'The Dark World of Chris Chan (ft. Geno Samuel) | Trash Taste #68',
+  titleShort: 'The Dark World of Chris Chan',
+  episodeNumber: 68,
   publishedAt: '2021-10-01T22:53:03Z',
   sections: {
     '00:00:00': 'Disclaimer',
@@ -2270,6 +2414,8 @@ const videoJwpBZ80J0R4: Video = {
   id: 'JwpBZ80J0R4',
   channel: channelTrashTaste,
   title: 'Nice | Trash Taste #69',
+  titleShort: 'Nice',
+  episodeNumber: 69,
   publishedAt: '2021-10-08T20:00:04Z',
   sections: {
     '00:00:00': 'Bickering from the get-go',
@@ -2312,6 +2458,8 @@ const videolh7bJa534AY: Video = {
   id: 'lh7bJa534AY',
   channel: channelTrashTaste,
   title: 'Quarantine Nightmares | Trash Taste #70',
+  titleShort: 'Quarantine Nightmares',
+  episodeNumber: 70,
   publishedAt: '2021-10-15T20:00:24Z',
   sections: {
     '00:00:00': 'We need coffee',
@@ -2369,6 +2517,8 @@ const videoxqP3WXFYiGc: Video = {
   id: 'xqP3WXFYiGc',
   channel: channelTrashTaste,
   title: 'WE ARE PRIVILEGED | Trash Taste #71',
+  titleShort: 'WE ARE PRIVILEGED',
+  episodeNumber: 71,
   publishedAt: '2021-10-22T20:00:17Z',
   sections: {
     '00:00:00': "You Don't have to understand the memes",
@@ -2417,6 +2567,8 @@ const video_Xb2L4q1SW4: Video = {
   id: '-Xb2L4q1SW4',
   channel: channelTrashTaste,
   title: "GHOSTS DON'T SCARE US | Trash Taste #72",
+  titleShort: "GHOSTS DON'T SCARE US",
+  episodeNumber: 72,
   publishedAt: '2021-10-29T20:00:00Z',
   sections: {
     '00:00:00': 'Joey has changed',
@@ -2450,6 +2602,8 @@ const videoduEihBy6ujg: Video = {
   id: 'duEihBy6ujg',
   channel: channelTrashTaste,
   title: 'WE WILL NEVER UNDERSTAND JAPANESE | Trash Taste #73',
+  titleShort: 'WE WILL NEVER UNDERSTAND JAPANESE',
+  episodeNumber: 73,
   publishedAt: '2021-11-05T20:00:22Z',
   sections: {
     '00:00:00': 'You made it',
@@ -2501,6 +2655,8 @@ const videoh5QspNrKphM: Video = {
   id: 'h5QspNrKphM',
   channel: channelTrashTaste,
   title: 'The Vtuber Rap God Returns (ft. Mori Calliope) | Trash Taste #74',
+  titleShort: 'The Vtuber Rap God Returns',
+  episodeNumber: 74,
   publishedAt: '2021-11-12T20:00:11Z',
   sections: {
     '00:00:00': 'Pop pop, babymen are here',
@@ -2546,6 +2702,8 @@ const videoJr5xSmrSqyA: Video = {
   id: 'Jr5xSmrSqyA',
   channel: channelTrashTaste,
   title: 'WE LIVE IN A SOCIETY | Trash Taste #75',
+  titleShort: 'WE LIVE IN A SOCIETY',
+  episodeNumber: 75,
   publishedAt: '2021-11-19T20:00:10Z',
   sections: {
     '00:00:00': 'This is like Squid Game',
@@ -2584,6 +2742,8 @@ const videopWdHBCvah1Y: Video = {
   id: 'pWdHBCvah1Y',
   channel: channelTrashTaste,
   title: "We Don't Understand Public Holidays | Trash Taste #76",
+  titleShort: "We Don't Understand Public Holidays",
+  episodeNumber: 76,
   publishedAt: '2021-11-26T20:00:13Z',
   sections: {
     '00:00:00': 'Thanksgiving starts now',
@@ -2678,6 +2838,8 @@ const video1XKE8EOtwpg: Video = {
   id: '1XKE8EOtwpg',
   channel: channelTrashTaste,
   title: 'Sitting Down with a REAL Japanese Host | Trash Taste #78',
+  titleShort: 'Sitting Down with a REAL Japanese Host',
+  episodeNumber: 78,
   publishedAt: '2021-12-10T20:00:00Z',
   sections: {
     '00:00:00': 'Trash Taste x Apari merch',
@@ -2727,6 +2889,8 @@ const videomhWMch3v9WY: Video = {
   id: 'mhWMch3v9WY',
   channel: channelTrashTaste,
   title: 'THE ANIME FIGURE SPECIAL | Trash Taste #79',
+  titleShort: 'THE ANIME FIGURE SPECIAL',
+  episodeNumber: 79,
   publishedAt: '2021-12-17T20:00:13Z',
   sections: {
     '00:00:00': '2 Weeks Left',
@@ -2780,6 +2944,8 @@ const video9EU_GkHqGAE: Video = {
   id: '9EU-GkHqGAE',
   channel: channelTrashTaste,
   title: 'Last Trash Taste of 2021 | Trash Taste #80',
+  titleShort: 'Last Trash Taste of 2021',
+  episodeNumber: 80,
   publishedAt: '2021-12-24T20:00:01Z',
   sections: {
     '00:00:00': 'Your final chance',
@@ -2820,6 +2986,8 @@ const videoZ0xtAGKqAtg: Video = {
   id: 'Z0xtAGKqAtg',
   channel: channelTrashTaste,
   title: 'Our WORST Food Takes Yet | Trash Taste #81',
+  titleShort: 'Our WORST Food Takes Yet',
+  episodeNumber: 81,
   publishedAt: '2021-12-31T20:00:15Z',
   sections: {
     '00:00:00': 'Japanese coffee',
@@ -2868,6 +3036,7 @@ const videosxT3do4Wn0I: Video = {
   id: 'sxT3do4Wn0I',
   channel: channelTrashTaste,
   title: "We Became Japan's WORST Michelin Star Chefs | Trash Taste Special",
+  titleShort: "We Became Japan's WORST Michelin Star Chefs",
   publishedAt: '2022-01-07T20:00:11Z',
   tags: [
     'Cooking',
@@ -2879,6 +3048,7 @@ const videosxT3do4Wn0I: Video = {
     'Iron Chef',
     'Trash Taste Cooking Special',
   ],
+  type: 'special',
 };
 channelTrashTaste.videos.push(videosxT3do4Wn0I);
 
@@ -2886,6 +3056,8 @@ const video1oyrYYqQWWw: Video = {
   id: '1oyrYYqQWWw',
   channel: channelTrashTaste,
   title: 'WE ALMOST DIED | Trash Taste #82',
+  titleShort: 'WE ALMOST DIED',
+  episodeNumber: 82,
   publishedAt: '2022-01-14T20:00:01Z',
   sections: {
     '00:00:00': 'We almost perished',
@@ -2931,6 +3103,8 @@ const videoBzgyXd4Rfss: Video = {
   id: 'BzgyXd4Rfss',
   channel: channelTrashTaste,
   title: 'Sitting Down with a Legendary Japanese Vtuber (ft. Kson) | Trash Taste #83',
+  titleShort: 'Sitting Down with a Legendary Japanese Vtuber',
+  episodeNumber: 83,
   publishedAt: '2022-01-21T20:00:06Z',
   sections: {
     '00:00:00': 'Kson has joined the party',
@@ -2979,6 +3153,8 @@ const videobQyhBfnhIDY: Video = {
   id: 'bQyhBfnhIDY',
   channel: channelTrashTaste,
   title: 'WE ARE DYING (ft. Abroad in Japan) | Trash Taste #84',
+  titleShort: 'WE ARE DYING',
+  episodeNumber: 84,
   publishedAt: '2022-01-28T20:00:09Z',
   sections: {
     '00:00:00': 'Chris the affable',
@@ -3042,6 +3218,8 @@ const videoTYgUS6j0avo: Video = {
   id: 'TYgUS6j0avo',
   channel: channelTrashTaste,
   title: 'The Boys Went Snowboarding | Trash Taste #85',
+  titleShort: 'The Boys Went Snowboarding',
+  episodeNumber: 85,
   publishedAt: '2022-02-04T20:00:15Z',
   sections: {
     '00:00:00': 'The reality of this podcast',
@@ -3076,6 +3254,8 @@ const videog2v_83FFrSc: Video = {
   id: 'g2v_83FFrSc',
   channel: channelTrashTaste,
   title: "We're Still an Anime Podcast | Trash Taste #86",
+  titleShort: "We're Still an Anime Podcast",
+  episodeNumber: 86,
   publishedAt: '2022-02-11T20:00:25Z',
   sections: {
     '00:00:00': "You wouldn't steal a podcast",
@@ -3119,6 +3299,8 @@ const video4tfKGg6Bpes: Video = {
   id: '4tfKGg6Bpes',
   channel: channelTrashTaste,
   title: 'OUR AWKWARD FAN STORIES | Trash Taste #87',
+  titleShort: 'OUR AWKWARD FAN STORIES',
+  episodeNumber: 87,
   publishedAt: '2022-02-18T20:00:09Z',
   sections: {
     '00:00:00': 'We are bringing the bass',
@@ -3166,6 +3348,8 @@ const videoktpnsG6pvA8: Video = {
   id: 'ktpnsG6pvA8',
   channel: channelTrashTaste,
   title: 'The Dream Episode | Trash Taste #88',
+  titleShort: 'The Dream Episode',
+  episodeNumber: 88,
   publishedAt: '2022-02-25T20:00:20Z',
   sections: {
     '00:00:00': 'Garnt has forgotten how to podcast',
@@ -3198,6 +3382,8 @@ const videoc8ksAWojjag: Video = {
   id: 'c8ksAWojjag',
   channel: channelTrashTaste,
   title: 'Roasting Our Trash Taste In Music | Trash Taste #89',
+  titleShort: 'Roasting Our Trash Taste In Music',
+  episodeNumber: 89,
   publishedAt: '2022-03-04T21:00:16Z',
   sections: {
     '00:00:00': '24-Hour stream',
@@ -3250,6 +3436,8 @@ const video5v2aXluO5fc: Video = {
   id: '5v2aXluO5fc',
   channel: channelTrashTaste,
   title: "WE DON'T UNDERSTAND SPORTS | Trash Taste #90",
+  titleShort: "WE DON'T UNDERSTAND SPORTS",
+  episodeNumber: 90,
   publishedAt: '2022-03-11T20:00:01Z',
   sections: {
     '00:00:00': 'Charity time',
@@ -3301,6 +3489,8 @@ const videoZWS2nFo7eEo: Video = {
   id: 'ZWS2nFo7eEo',
   channel: channelTrashTaste,
   title: 'Animals We Could Beat in a Fight | Trash Taste #91',
+  titleShort: 'Animals We Could Beat in a Fight',
+  episodeNumber: 91,
   publishedAt: '2022-03-18T20:00:20Z',
   sections: {
     '00:00:00': 'Garnt got stuck in a snowstorm',
@@ -3347,6 +3537,8 @@ const videoXL6SuPw3kug: Video = {
   id: 'XL6SuPw3kug',
   channel: channelTrashTaste,
   title: 'Our Lives Are a Sitcom | Trash Taste #92',
+  titleShort: 'Our Lives Are a Sitcom',
+  episodeNumber: 92,
   publishedAt: '2022-03-25T20:00:45Z',
   sections: {
     '00:00:00': 'Has internet gotten worse',
@@ -3378,6 +3570,8 @@ const videopjHme1fdS3M: Video = {
   id: 'pjHme1fdS3M',
   channel: channelTrashTaste,
   title: 'The Metaverse was a Mistake | Trash Taste #93',
+  titleShort: 'The Metaverse was a Mistake',
+  episodeNumber: 93,
   publishedAt: '2022-04-01T20:00:07Z',
   sections: {
     '00:00:00': 'People who work with animals are surprisingly happy',
@@ -3431,6 +3625,8 @@ const videoRBKHSHEEgdU: Video = {
   id: 'RBKHSHEEgdU',
   channel: channelTrashTaste,
   title: 'This Is Why Real Men Cry | Trash Taste #94',
+  titleShort: 'This Is Why Real Men Cry',
+  episodeNumber: 94,
   publishedAt: '2022-04-08T20:00:06Z',
   sections: {
     '00:00:00': "There definitely wasn't an intro before this",
@@ -3489,6 +3685,8 @@ const videowi9fRiR4xWk: Video = {
   id: 'wi9fRiR4xWk',
   channel: channelTrashTaste,
   title: 'We Survived a MASSIVE Earthquake in Japan | Trash Taste #95',
+  titleShort: 'We Survived a MASSIVE Earthquake in Japan',
+  episodeNumber: 95,
   publishedAt: '2022-04-15T20:00:18Z',
   sections: {
     '00:00:00': 'Our most useless skills',
@@ -3540,6 +3738,8 @@ const video61rCpY7H7oo: Video = {
   id: '61rCpY7H7oo',
   channel: channelTrashTaste,
   title: 'Proving We Truly Have Trash Taste | Trash Taste #96',
+  titleShort: 'Proving We Truly Have Trash Taste',
+  episodeNumber: 96,
   publishedAt: '2022-04-22T20:00:00Z',
   sections: {
     '00:00:00': 'Thoughts on the 24-hour stream',
@@ -3573,6 +3773,8 @@ const videoHPQY80BYUHA: Video = {
   id: 'HPQY80BYUHA',
   channel: channelTrashTaste,
   title: 'Our SECRET Japan Travel Tips | Trash Taste #97',
+  titleShort: 'Our SECRET Japan Travel Tips',
+  episodeNumber: 97,
   publishedAt: '2022-04-29T20:00:04Z',
   sections: {
     '00:00:00': 'Is black paint heavier than white paint',
@@ -3616,6 +3818,8 @@ const video192Qd9oP84g: Video = {
   id: '192Qd9oP84g',
   channel: channelTrashTaste,
   title: 'Wedding Planning is an Absolute Nightmare | Trash Taste #98',
+  titleShort: 'Wedding Planning is an Absolute Nightmare',
+  episodeNumber: 98,
   publishedAt: '2022-05-06T20:00:54Z',
   sections: {
     '00:00:00': 'Garnt left us',
@@ -3660,6 +3864,8 @@ const videoznhQFPnCxec: Video = {
   id: 'znhQFPnCxec',
   channel: channelTrashTaste,
   title: 'JAPAN IS OPENING UP TO NEW PEOPLE (ft. @Daidus) | Trash Taste #99',
+  titleShort: 'JAPAN IS OPENING UP TO NEW PEOPLE',
+  episodeNumber: 99,
   publishedAt: '2022-05-13T20:00:12Z',
   sections: {
     '00:00:00': 'Bowing when on the phone',
@@ -3709,6 +3915,8 @@ const videojtKsu1aIwvM: Video = {
   id: 'jtKsu1aIwvM',
   channel: channelTrashTaste,
   title: 'The 2nd Annual Trash Taste Awards | Trash Taste #100',
+  titleShort: 'The 2nd Annual Trash Taste Awards',
+  episodeNumber: 100,
   publishedAt: '2022-05-20T20:00:16Z',
   sections: {
     '00:00:00': 'Welcome to the Awardw show',
@@ -3756,6 +3964,8 @@ const videoZd1iy4iMkmY: Video = {
   id: 'Zd1iy4iMkmY',
   channel: channelTrashTaste,
   title: 'The Struggles of a Storytime Youtuber (ft. @Emirichu)  | Trash Taste #101',
+  titleShort: 'The Struggles of a Storytime Youtuber (ft. @Emirichu) ',
+  episodeNumber: 101,
   publishedAt: '2022-05-27T20:00:08Z',
   sections: {
     '00:00:00': 'Emily is here',
@@ -3817,6 +4027,8 @@ const videopr_aIBYhxvw: Video = {
   id: 'pr-aIBYhxvw',
   channel: channelTrashTaste,
   title: 'Goodbye Japan | Trash Taste #102',
+  titleShort: 'Goodbye Japan',
+  episodeNumber: 102,
   publishedAt: '2022-06-03T20:00:17Z',
   sections: {
     '00:00:00': 'We are actually leaving',
@@ -3856,6 +4068,8 @@ const videoHW6mghCe6Wk: Video = {
   id: 'HW6mghCe6Wk',
   channel: channelTrashTaste,
   title: 'Our First Trash Taste Convention Experience | Trash Taste #103',
+  titleShort: 'Our First Trash Taste Convention Experience',
+  episodeNumber: 103,
   publishedAt: '2022-06-10T20:00:05Z',
   sections: {
     '00:00:00': 'We have a new studio',
@@ -3894,6 +4108,8 @@ const videosrdgNtMhrj4: Video = {
   id: 'srdgNtMhrj4',
   channel: channelTrashTaste,
   title: 'Sitting down with a REAL Anime Composer (ft. Kevin Penkin) | Trash Taste #104',
+  titleShort: 'Sitting down with a REAL Anime Composer',
+  episodeNumber: 104,
   publishedAt: '2022-06-17T20:00:09Z',
   sections: {
     '00:00:00': 'Kevin the Lad',
@@ -3925,6 +4141,8 @@ const videoGl2aHWx5HFg: Video = {
   id: 'Gl2aHWx5HFg',
   channel: channelTrashTaste,
   title: 'Sitting Down With a Real ℌệ𝔫𝔱ằ𝔦 Artist (ft. Shindo L) | Trash Taste #105',
+  titleShort: 'Sitting Down With a Real ℌệ𝔫𝔱ằ𝔦 Artist',
+  episodeNumber: 105,
   publishedAt: '2022-06-24T20:00:10Z',
   sections: {
     '00:00:00': 'The spiciest guest',
@@ -3968,6 +4186,8 @@ const videoV9PhUz0lX70: Video = {
   id: 'V9PhUz0lX70',
   channel: channelTrashTaste,
   title: 'TOP OF THE MORNING (ft.  @jacksepticeye ) | Trash Taste #106',
+  titleShort: 'TOP OF THE MORNING',
+  episodeNumber: 106,
   publishedAt: '2022-07-01T20:00:14Z',
   sections: {
     '00:00:16': "Who's Jacksepticeye",
@@ -4008,6 +4228,8 @@ const video6IE9eg0HoX8: Video = {
   id: '6IE9eg0HoX8',
   channel: channelTrashTaste,
   title: 'OUR BOY GOT MARRIED | Trash Taste #107',
+  titleShort: 'OUR BOY GOT MARRIED',
+  episodeNumber: 107,
   publishedAt: '2022-07-08T20:00:01Z',
   sections: {
     '00:00:00': 'Welcome to our new studio',
@@ -4058,6 +4280,8 @@ const videoqmfGOBiE6O0: Video = {
   id: 'qmfGOBiE6O0',
   channel: channelTrashTaste,
   title: 'OFFLINETV CROSSOVER (ft. @LilyPichu) | Trash Taste #108',
+  titleShort: 'OFFLINETV CROSSOVER',
+  episodeNumber: 108,
   publishedAt: '2022-07-15T20:00:23Z',
   sections: {
     '00:00:00': 'Trash Taste Tour announcement',
@@ -4109,6 +4333,8 @@ const videoGPDrZwxi338: Video = {
   id: 'GPDrZwxi338',
   channel: channelTrashTaste,
   title: 'Daily Life of a Mad Scientist (ft. @Michael Reeves) | Trash Taste #109',
+  titleShort: 'Daily Life of a Mad Scientist',
+  episodeNumber: 109,
   publishedAt: '2022-07-22T20:00:03Z',
   sections: {
     '00:00:00': "Let's talk stocks",
@@ -4157,6 +4383,8 @@ const videoI6EKOnqlN48: Video = {
   id: 'I6EKOnqlN48',
   channel: channelTrashTaste,
   title: 'We Spent a Day with @AnthonyPadilla | Trash Taste #110',
+  titleShort: 'We Spent a Day with @AnthonyPadilla',
+  episodeNumber: 110,
   publishedAt: '2022-07-29T20:00:11Z',
   sections: {
     '00:00:00': 'Trash Taste is going on tour',
@@ -4198,6 +4426,8 @@ const videosSLrYZkoArQ: Video = {
   id: 'sSLrYZkoArQ',
   channel: channelTrashTaste,
   title: 'The Struggles of a Professional Voice Actor (ft. @ProZD)  | Trash Taste #111',
+  titleShort: 'The Struggles of a Professional Voice Actor (ft. @ProZD) ',
+  episodeNumber: 111,
   publishedAt: '2022-08-05T20:00:12Z',
   sections: {
     '00:00:00': 'Intro',
@@ -4240,6 +4470,8 @@ const videoUZEK5f6ejW8: Video = {
   id: 'UZEK5f6ejW8',
   channel: channelTrashTaste,
   title: 'THE BOIZ ARE GOING ON TOUR! | Trash Taste #112',
+  titleShort: 'THE BOIZ ARE GOING ON TOUR!',
+  episodeNumber: 112,
   publishedAt: '2022-08-12T20:00:08Z',
   sections: {
     '00:00:00': "We're back in Japan",
@@ -4279,6 +4511,8 @@ const videoZbnnHRbqwB0: Video = {
   id: 'ZbnnHRbqwB0',
   channel: channelTrashTaste,
   title: 'Sitting Down with a Professional Cosplayer (ft. @Jessica Nigri) | Trash Taste #113',
+  titleShort: 'Sitting Down with a Professional Cosplayer',
+  episodeNumber: 113,
   publishedAt: '2022-08-19T20:00:15Z',
   sections: {
     '00:00:00': 'The Cosplay Goddess is here',
@@ -4338,6 +4572,8 @@ const videoTajZ3_uqlbU: Video = {
   id: 'TajZ3_uqlbU',
   channel: channelTrashTaste,
   title: 'Sitting Down with YouTube’s Top Streamer (ft. @Ludwig) | Trash Taste #114',
+  titleShort: 'Sitting Down with YouTube’s Top Streamer',
+  episodeNumber: 114,
   publishedAt: '2022-08-26T20:00:08Z',
   sections: {
     '00:00:00': 'Test tour',
@@ -4398,6 +4634,8 @@ const video4o5TXDOjeD8: Video = {
   id: '4o5TXDOjeD8',
   channel: channelTrashTaste,
   title: 'We Are The WORST Movie Reviewers | Trash Taste #115',
+  titleShort: 'We Are The WORST Movie Reviewers',
+  episodeNumber: 115,
   publishedAt: '2022-09-02T20:00:01Z',
   sections: {
     '00:00:00': 'We are soft',
@@ -4440,6 +4678,8 @@ const videojOHqQG2MbJs: Video = {
   id: 'jOHqQG2MbJs',
   channel: channelTrashTaste,
   title: 'Sitting Down with a Top Female Streamer (ft. @Pokimane) | Trash Taste #116',
+  titleShort: 'Sitting Down with a Top Female Streamer',
+  episodeNumber: 116,
   publishedAt: '2022-09-09T20:00:20Z',
   sections: {
     '00:00:00': 'Trash Taste Tour!',
@@ -4491,6 +4731,8 @@ const videobYIb_YaaCMY: Video = {
   id: 'bYIb-YaaCMY',
   channel: channelTrashTaste,
   title: 'Cycling is HARD | Trash Taste #117',
+  titleShort: 'Cycling is HARD',
+  episodeNumber: 117,
   publishedAt: '2022-09-16T20:00:09Z',
   sections: {
     '00:00:00': 'Plushies',
@@ -4530,6 +4772,8 @@ const video4byDAin3yyo: Video = {
   id: '4byDAin3yyo',
   channel: channelTrashTaste,
   title: 'We are the Garbage Taste Podcast (ft. @William Osman) | Trash Taste #118',
+  titleShort: 'We are the Garbage Taste Podcast',
+  episodeNumber: 118,
   publishedAt: '2022-09-23T20:00:01Z',
   sections: {
     '00:00:00': 'Garbage Flavor',
@@ -4575,6 +4819,8 @@ const videooMgQoMNXdn8: Video = {
   id: 'oMgQoMNXdn8',
   channel: channelTrashTaste,
   title: 'We HATE Celebrities | Trash Taste #119',
+  titleShort: 'We HATE Celebrities',
+  episodeNumber: 119,
   publishedAt: '2022-09-30T20:00:26Z',
   sections: {
     '00:00:00': 'The prequels',
@@ -4608,6 +4854,8 @@ const videoX0ZvX_Sm0cI: Video = {
   id: 'X0ZvX_Sm0cI',
   channel: channelTrashTaste,
   title: 'The Most Dangerous Man on YouTube (ft. @NileRed) | Trash Taste #120',
+  titleShort: 'The Most Dangerous Man on YouTube',
+  episodeNumber: 120,
   publishedAt: '2022-10-07T20:00:17Z',
   sections: {
     '00:00:00': 'Nile Red does the thing',
