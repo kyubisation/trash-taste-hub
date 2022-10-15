@@ -4912,6 +4912,52 @@ const videoX0ZvX_Sm0cI: Video = {
 channelTrashTaste.videos.push(videoX0ZvX_Sm0cI);
 guestNileRed.videos.push(videoX0ZvX_Sm0cI);
 
+const videoUUnX3gdpTSw: Video = {
+  id: 'UUnX3gdpTSw',
+  channel: channelTrashTaste,
+  title: 'We Are NOT Alphas | Trash Taste #121',
+  titleShort: 'We Are NOT Alphas',
+  episodeNumber: 121,
+  publishedAt: '2022-10-14T20:00:17Z',
+  sections: {
+    '00:00:00': 'Why are we still getting demonetized',
+    '00:00:50': 'Japanese restaurants panic when you have a normal portion size',
+    '00:08:30': 'Coffee is usually brought after the meal',
+    '00:12:29': "Domino's Pizza didn't succeed in Italy",
+    '00:15:35': 'Did England invent football',
+    '00:17:28': 'The oldest sport in the world',
+    '00:19:48': 'Rise up fellow herbivores',
+    '00:23:09': 'GamerSupps',
+    '00:24:21': "Listening to people you don't agree with",
+    '00:26:55': 'Haka',
+    '00:30:35': 'Wales has some interesting traditions',
+    '00:35:07': 'Garnt has started to appreciate Thai culture',
+    '00:37:12': "What's your bloodline",
+    '00:43:23': 'Feeding children your culture',
+    '00:45:40': 'Would Connor teach Welsh to his child',
+    '00:50:04': 'Who understands culture better',
+    '00:53:35': 'Accent shifting',
+    '00:57:58': 'PC Specialist',
+    '00:59:06': 'Herbivores',
+    '01:00:00': 'Vegetarian culture in Japan',
+    '01:06:57': 'Yuzu is too powerful',
+    '01:09:55': 'The worst citrus fruit',
+    '01:13:26': 'Sakura flavor',
+    '01:14:51': 'Every sakura tree is a clone of each other',
+    '01:17:22': 'Weddings in Japan dropped because of vtubers',
+    '01:19:18': 'How can japan fix its baby problems',
+    '01:21:23': 'Love is Blind',
+    '01:26:57': 'Being too shy to take off your mask',
+    '01:33:32': "Japan's mask culture",
+    '01:36:30': "Japan's economy is having an oopsie",
+    '01:40:29': "Japan is still announcing it's daily number of cases",
+    '01:42:28': 'The public consensus on talking about the pandemic',
+    '01:49:28': 'Just tough it out',
+    '01:51:50': 'Our fellow alpha herbivores',
+  },
+};
+channelTrashTaste.videos.push(videoUUnX3gdpTSw);
+
 export const channelTrashTasteAfterDark: Channel = {
   id: 'UCKaN3mt53ATqRjzalb2ALFQ',
   name: 'Trash Taste After Dark',
@@ -11254,6 +11300,15 @@ const video1l2ynyqhi3I: Video = {
 };
 channelTrashTasteHighlights.videos.push(video1l2ynyqhi3I);
 
+const videotui2nqy1Dqk: Video = {
+  id: 'tui2nqy1Dqk',
+  channel: channelTrashTasteHighlights,
+  title: 'How Dangerous is it to Work with Radiation??',
+  publishedAt: '2022-09-27T19:00:30Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videotui2nqy1Dqk);
+
 const videoZFY77KqkKCk: Video = {
   id: 'ZFY77KqkKCk',
   channel: channelTrashTasteHighlights,
@@ -11379,6 +11434,87 @@ const video_SzAd_krEL4: Video = {
   tags: ['Highlights', 'Trash Taste Highlights'],
 };
 channelTrashTasteHighlights.videos.push(video_SzAd_krEL4);
+
+const videooK3JniVt_Ys: Video = {
+  id: 'oK3JniVt_Ys',
+  channel: channelTrashTasteHighlights,
+  title: 'Getting Scared of Explosions After ALMOST Blowing Up From One',
+  publishedAt: '2022-10-09T19:00:22Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videooK3JniVt_Ys);
+
+const video_xCZZJqnPUc: Video = {
+  id: '-xCZZJqnPUc',
+  channel: channelTrashTasteHighlights,
+  title: 'NileRed Burned Himself with Acid While Recording a Video',
+  publishedAt: '2022-10-09T20:00:01Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(video_xCZZJqnPUc);
+
+const videoP1Iq38srrmM: Video = {
+  id: 'P1Iq38srrmM',
+  channel: channelTrashTasteHighlights,
+  title: 'Asking the Government Permission to make Uranium Glass',
+  publishedAt: '2022-10-10T19:00:09Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videoP1Iq38srrmM);
+
+const videocC6hJJlqeV0: Video = {
+  id: 'cC6hJJlqeV0',
+  channel: channelTrashTasteHighlights,
+  title: 'How Easy Is It ACTUALLY To Make Meth??',
+  publishedAt: '2022-10-10T20:00:09Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videocC6hJJlqeV0);
+
+const videozsJd5_gerJ8: Video = {
+  id: 'zsJd5_gerJ8',
+  channel: channelTrashTasteHighlights,
+  title: 'NileRed Offered Us PURE Capsaicin and we ALMOST DIED',
+  publishedAt: '2022-10-11T19:00:21Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videozsJd5_gerJ8);
+
+const videoOkiNcOcS4z4: Video = {
+  id: 'OkiNcOcS4z4',
+  channel: channelTrashTasteHighlights,
+  title: 'The REAL Scientific Way to Dispose a Dead Body',
+  publishedAt: '2022-10-11T20:00:12Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videoOkiNcOcS4z4);
+
+const videoFAPeFmWmYQo: Video = {
+  id: 'FAPeFmWmYQo',
+  channel: channelTrashTasteHighlights,
+  title: 'Buying Something SO SUS The Government Comes After You',
+  publishedAt: '2022-10-12T19:00:05Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videoFAPeFmWmYQo);
+
+const video5mkIXf4eRqY: Video = {
+  id: '5mkIXf4eRqY',
+  channel: channelTrashTasteHighlights,
+  title: 'We Found a Channel That Can PERFECTLY Impersonate You',
+  publishedAt: '2022-10-12T20:00:02Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(video5mkIXf4eRqY);
+
+const videoGQqmn1KGMxg: Video = {
+  id: 'GQqmn1KGMxg',
+  channel: channelTrashTasteHighlights,
+  title: 'Listening To Your Own Voice Ruined His Life',
+  publishedAt: '2022-10-13T19:00:08Z',
+  tags: ['Highlights', 'Trash Taste Highlights'],
+};
+channelTrashTasteHighlights.videos.push(videoGQqmn1KGMxg);
 
 export const channelTrashTasteShorts: Channel = {
   id: 'UCPohHVcDqBMmRLpUFwthAng',

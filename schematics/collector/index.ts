@@ -20,7 +20,7 @@ export function collect(): Rule {
 
     try {
       for (const [channelName, channelId] of Object.entries(channels)) {
-        console.log(`Checking ${channelName} for updates`);
+        context.logger.info(`Checking ${channelName} for updates`);
         let nextPageToken: string | undefined | null = undefined;
         do {
           const searchResponse: GaxiosResponse<youtube_v3.Schema$SearchListResponse> =
@@ -50,11 +50,11 @@ export function collect(): Rule {
       context.logger.error(`${e}`);
     }
 
-    videos.sort((a, b) => a.snippet!.publishedAt!.localeCompare(b.snippet!.publishedAt!));
-    const dataJsonOutput = format(
-      JSON.stringify({ videos, channels }, null, 2),
-      resolveConfig.sync(dataJsonPath)!
-    );
+    videos.sort((a, b) => b.snippet!.publishedAt!.localeCompare(a.snippet!.publishedAt!));
+    const dataJsonOutput = format(JSON.stringify({ videos, channels }, null, 2), {
+      ...require('../../package.json').prettier,
+      parser: 'json',
+    });
     tree.overwrite(dataJsonPath, dataJsonOutput);
   };
 }
