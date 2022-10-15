@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:schematics": "node schematics/build.js",
+    "postbuild:schematics": "typescript-json-schema --out=schematics/aggregator/manual-data.schema.json schematics/aggregator/manual-data.ts ManualData",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
@@ -59,7 +60,8 @@
     "lint-staged": "13.0.3",
     "prettier": "^2.7.1",
     "tsx": "^3.10.1",
-    "typescript": "~4.8.4"
+    "typescript": "~4.8.4",
+    "typescript-json-schema": "^0.54.0"
   },
   "prettier": {
     "singleQuote": true,

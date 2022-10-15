@@ -28,6 +28,17 @@ const guestGenoSamuel: Guest = {
   name: 'Geno Samuel',
   videos: [],
 };
+const guestIronmouse: Guest = {
+  id: 'ironmouse',
+  name: 'Ironmouse',
+  youtube: 'https://www.youtube.com/c/ironmouseparty',
+  twitch: 'https://www.twitch.tv/ironmouse',
+  tiktok: 'https://www.tiktok.com/@ironmouse',
+  spotify: 'https://open.spotify.com/artist/3rkwWB8rbBCNTrSvVUBa6C',
+  twitter: 'https://twitter.com/ironmouse',
+  instagram: 'https://www.instagram.com/ironmouseparty/',
+  videos: [],
+};
 const guestjacksepticeye: Guest = {
   id: 'jacksepticeye',
   name: 'jacksepticeye',
@@ -349,7 +360,7 @@ const videoM7D6mwcssuM: Video = {
   titleShort: 'The Chess Tournament Arc',
   publishedAt: '2020-08-25T20:00:03Z',
   tags: ['Chess', 'Tournament', 'Arc', 'Trash Taste Special'],
-  type: 'special',
+  type: 'Special',
 };
 channelTrashTaste.videos.push(videoM7D6mwcssuM);
 
@@ -477,7 +488,7 @@ const videosCcv9uqSBU0: Video = {
   titleShort: 'We Tried Real Tokyo Drifting and FAILED',
   publishedAt: '2020-10-30T20:00:53Z',
   tags: ['Drifting', 'Ebisu Circuit'],
-  type: 'special',
+  type: 'Special',
 };
 channelTrashTaste.videos.push(videosCcv9uqSBU0);
 
@@ -660,7 +671,7 @@ const videoBEzKwYTQX2s: Video = {
   titleShort: 'We Tried Cycling Across Japan and FAILED',
   publishedAt: '2021-02-26T20:00:15Z',
   tags: ['Special', 'cycling'],
-  type: 'special',
+  type: 'Special',
 };
 channelTrashTaste.videos.push(videoBEzKwYTQX2s);
 
@@ -1706,7 +1717,7 @@ const videos5g2z4a9M3s: Video = {
   title: 'Trash Taste PC Building Speedrun | Trash Taste Special',
   titleShort: 'Trash Taste PC Building Speedrun',
   publishedAt: '2021-06-28T19:00:09Z',
-  type: 'special',
+  type: 'Special',
 };
 channelTrashTaste.videos.push(videos5g2z4a9M3s);
 
@@ -3048,7 +3059,7 @@ const videosxT3do4Wn0I: Video = {
     'Iron Chef',
     'Trash Taste Cooking Special',
   ],
-  type: 'special',
+  type: 'Special',
 };
 channelTrashTaste.videos.push(videosxT3do4Wn0I);
 
@@ -4912,6 +4923,8 @@ const videognGm0hcdTDA: Video = {
   id: 'gnGm0hcdTDA',
   channel: channelTrashTasteAfterDark,
   title: 'Is The Welsh Flag The Best? | Trash Taste Stream #1',
+  titleShort: 'Is The Welsh Flag The Best?',
+  episodeNumber: 1,
   publishedAt: '2021-01-28T10:00:11Z',
   sections: {
     '00:00:00': 'Intro',
@@ -4979,6 +4992,7 @@ const videognGm0hcdTDA: Video = {
     'Welsh Flag',
     'Trash Taste Streams',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videognGm0hcdTDA);
 
@@ -4986,8 +5000,11 @@ const videofBCwbFLjwZk: Video = {
   id: 'fBCwbFLjwZk',
   channel: channelTrashTasteAfterDark,
   title: 'Reacting to The Anime Awards | Trash Taste Stream #2',
+  titleShort: 'Reacting to The Anime Awards',
+  episodeNumber: 2,
   publishedAt: '2021-02-20T10:42:11Z',
   tags: ['Streams', 'Twitch'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videofBCwbFLjwZk);
 
@@ -4995,6 +5012,8 @@ const videowCddNmGs8oo: Video = {
   id: 'wCddNmGs8oo',
   channel: channelTrashTasteAfterDark,
   title: "We're getting a mascot? | Trash Taste Stream #3",
+  titleShort: "We're getting a mascot?",
+  episodeNumber: 3,
   publishedAt: '2021-03-16T21:01:12Z',
   sections: {
     '00:00': 'Hype intro',
@@ -5050,6 +5069,7 @@ const videowCddNmGs8oo: Video = {
     '02:04:12': 'Outro',
   },
   tags: ['Streams', 'Twitch', 'mascot', 'evangelion', 'apex'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videowCddNmGs8oo);
 
@@ -5057,6 +5077,8 @@ const videoYEPlagGqXm4: Video = {
   id: 'YEPlagGqXm4',
   channel: channelTrashTasteAfterDark,
   title: 'Plans With Our New Studio? | Trash Taste Stream #4',
+  titleShort: 'Plans With Our New Studio?',
+  episodeNumber: 4,
   publishedAt: '2021-04-27T19:52:24Z',
   sections: {
     '00:00:00': 'Alexa, do the intro',
@@ -5117,6 +5139,7 @@ const videoYEPlagGqXm4: Video = {
     '01:55:19': 'Wrapping it up',
   },
   tags: ['Streams', 'Twitch', 'hot tub', 'studio', 'new studio', 'moving', 'anniversary', 'awards'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoYEPlagGqXm4);
 
@@ -5124,6 +5147,8 @@ const videoXqsMgrupF2E: Video = {
   id: 'XqsMgrupF2E',
   channel: channelTrashTasteAfterDark,
   title: 'Which American Flag is the Best? | Trash Taste Stream #5',
+  titleShort: 'Which American Flag is the Best?',
+  episodeNumber: 5,
   publishedAt: '2021-05-26T20:18:47Z',
   sections: {
     '00:00:00': 'Gamer intro',
@@ -5168,6 +5193,7 @@ const videoXqsMgrupF2E: Video = {
     '01:48:37': 'Fondest memory of this studio',
   },
   tags: ['Streams', 'Twitch', 'tier list', 'tiermaker', 'america', 'flags'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoXqsMgrupF2E);
 
@@ -5184,6 +5210,8 @@ const video9In0SciVBNc: Video = {
   id: '9In0SciVBNc',
   channel: channelTrashTasteAfterDark,
   title: 'Our First Figurine In The New Studio | Trash Taste Stream #6',
+  titleShort: 'Our First Figurine In The New Studio',
+  episodeNumber: 6,
   publishedAt: '2021-08-05T20:56:23Z',
   sections: {
     '00:00:00': 'Our new set',
@@ -5215,6 +5243,7 @@ const video9In0SciVBNc: Video = {
     'season 2',
     'new set',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video9In0SciVBNc);
 
@@ -5231,6 +5260,8 @@ const videoAYcculqrvFA: Video = {
   id: 'AYcculqrvFA',
   channel: channelTrashTasteAfterDark,
   title: 'Reacting to the Manga Awards | Trash Taste Stream #7',
+  titleShort: 'Reacting to the Manga Awards',
+  episodeNumber: 7,
   publishedAt: '2021-09-09T20:00:03Z',
   sections: {
     '00:00:00': 'We are now brighter',
@@ -5249,6 +5280,7 @@ const videoAYcculqrvFA: Video = {
     '01:17:19': 'Final thoughts',
   },
   tags: ['Streams', 'Twitch'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoAYcculqrvFA);
 
@@ -5256,6 +5288,8 @@ const videoIdv7AAglAXs: Video = {
   id: 'Idv7AAglAXs',
   channel: channelTrashTasteAfterDark,
   title: 'We Tested Our Anime Knowledge and Won... | Trash Taste Stream #8',
+  titleShort: 'We Tested Our Anime Knowledge and Won...',
+  episodeNumber: 8,
   publishedAt: '2021-10-20T16:12:12Z',
   sections: {
     '00:00:00': 'Spelling bee',
@@ -5298,6 +5332,7 @@ const videoIdv7AAglAXs: Video = {
     'game show',
     'bookwalker',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoIdv7AAglAXs);
 
@@ -5305,6 +5340,8 @@ const videoVbsP8uE234I: Video = {
   id: 'VbsP8uE234I',
   channel: channelTrashTasteAfterDark,
   title: 'Trash Taste Official Spelling Bee Challenge! | Trash Taste Stream #9',
+  titleShort: 'Trash Taste Official Spelling Bee Challenge!',
+  episodeNumber: 9,
   publishedAt: '2021-11-03T20:45:00Z',
   sections: {
     '00:00:00': 'Where do we look',
@@ -5347,6 +5384,7 @@ const videoVbsP8uE234I: Video = {
     'words',
     'tournament',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoVbsP8uE234I);
 
@@ -5354,6 +5392,8 @@ const videoE4dC1FsUA64: Video = {
   id: 'E4dC1FsUA64',
   channel: channelTrashTasteAfterDark,
   title: 'We Tried the WORST American Snacks | Trash Taste Stream #10',
+  titleShort: 'We Tried the WORST American Snacks',
+  episodeNumber: 10,
   publishedAt: '2021-11-10T21:01:45Z',
   sections: {
     '00:00:00': 'Our adventure with Uber Eats',
@@ -5392,6 +5432,7 @@ const videoE4dC1FsUA64: Video = {
     'twinkies',
     'pumpkin spice',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoE4dC1FsUA64);
 
@@ -5399,6 +5440,8 @@ const videoWkgnZ_dl2QI: Video = {
   id: 'WkgnZ_dl2QI',
   channel: channelTrashTasteAfterDark,
   title: 'The Boys Take a Japanese Test | Trash Taste Stream #11',
+  titleShort: 'The Boys Take a Japanese Test',
+  episodeNumber: 11,
   publishedAt: '2021-11-17T20:11:07Z',
   sections: {
     '00:00:00': 'Welcome Pickle Ricks',
@@ -5435,6 +5478,7 @@ const videoWkgnZ_dl2QI: Video = {
     '02:24:12': 'The results',
   },
   tags: ['Streams', 'Twitch', 'after dark', 'VOD', 'japanese', 'test'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoWkgnZ_dl2QI);
 
@@ -5442,6 +5486,8 @@ const videoqV7tml8dBao: Video = {
   id: 'qV7tml8dBao',
   channel: channelTrashTasteAfterDark,
   title: "RANKING EVERY COUNTRY'S BEERS | Trash Taste Stream #12",
+  titleShort: "RANKING EVERY COUNTRY'S BEERS",
+  episodeNumber: 12,
   publishedAt: '2021-12-01T23:13:05Z',
   sections: {
     '00:00:00': 'Not like this',
@@ -5485,6 +5531,7 @@ const videoqV7tml8dBao: Video = {
     'guinness',
     'yebisu',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoqV7tml8dBao);
 
@@ -5492,6 +5539,8 @@ const video9AxveF6cLRw: Video = {
   id: '9AxveF6cLRw',
   channel: channelTrashTasteAfterDark,
   title: 'Which One of Us Is Better At English? | Trash Taste Stream #13',
+  titleShort: 'Which One of Us Is Better At English?',
+  episodeNumber: 13,
   publishedAt: '2021-12-08T20:01:50Z',
   sections: {
     '00:00:00': 'Za Warudo',
@@ -5522,6 +5571,7 @@ const video9AxveF6cLRw: Video = {
     '02:02:32': 'Future plans',
   },
   tags: ['Streams', 'Twitch', 'countdown', 'game show', 'challenge', 'words', 'english'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video9AxveF6cLRw);
 
@@ -5529,6 +5579,8 @@ const video_ZgriBwXUbY: Video = {
   id: '_ZgriBwXUbY',
   channel: channelTrashTasteAfterDark,
   title: 'The Big FAT Quiz of 2021 | Trash Taste Stream #14',
+  titleShort: 'The Big FAT Quiz of 2021',
+  episodeNumber: 14,
   publishedAt: '2021-12-15T20:01:59Z',
   sections: {
     '00:00:00': 'The drip council is here',
@@ -5572,6 +5624,7 @@ const video_ZgriBwXUbY: Video = {
     '02:15:21': 'Final thoughts',
   },
   tags: ['Streams', 'Twitch', 'quiz', 'challenge', 'big fat', '2021', 'year', 'questions'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video_ZgriBwXUbY);
 
@@ -5579,6 +5632,8 @@ const videowinrxCE5rEs: Video = {
   id: 'winrxCE5rEs',
   channel: channelTrashTasteAfterDark,
   title: 'Judging Your TRASH PC Setups | Trash Taste Stream #15',
+  titleShort: 'Judging Your TRASH PC Setups',
+  episodeNumber: 15,
   publishedAt: '2021-12-18T22:33:57Z',
   sections: {
     '00:00:00': 'Daddy Aorus',
@@ -5615,6 +5670,7 @@ const videowinrxCE5rEs: Video = {
     '02:27:16': 'Outro',
   },
   tags: ['Streams', 'Twitch', 'aorus', 'pc', 'setup', 'judging', 'rating', 'your', 'viewer'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videowinrxCE5rEs);
 
@@ -5622,6 +5678,8 @@ const videoxpxEM1eq8D8: Video = {
   id: 'xpxEM1eq8D8',
   channel: channelTrashTasteAfterDark,
   title: 'THE ANIME FIGURE SPECIAL FINALE | Trash Taste Stream #16',
+  titleShort: 'THE ANIME FIGURE SPECIAL FINALE',
+  episodeNumber: 16,
   publishedAt: '2021-12-22T19:35:18Z',
   sections: {
     '00:00:00': 'Happy Tree Day',
@@ -5670,6 +5728,7 @@ const videoxpxEM1eq8D8: Video = {
     '02:36:42': 'Outro',
   },
   tags: ['Streams', 'Twitch', 'figurine', 'special', 'challenge', 'figure'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoxpxEM1eq8D8);
 
@@ -5686,6 +5745,8 @@ const videoItyCZ7zaja0: Video = {
   id: 'ItyCZ7zaja0',
   channel: channelTrashTasteAfterDark,
   title: "Proving That We're DUMBER Than 5th Graders | Trash Taste Stream #17",
+  titleShort: "Proving That We're DUMBER Than 5th Graders",
+  episodeNumber: 17,
   publishedAt: '2022-01-19T22:22:57Z',
   sections: {
     '00:00:00': "We're back from vacation",
@@ -5725,6 +5786,7 @@ const videoItyCZ7zaja0: Video = {
     '02:09:23': "What we're doing next week",
   },
   tags: ['Streams', 'Twitch', 'smarter than', '5th grader', 'game show', 'quiz', 'challenge'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoItyCZ7zaja0);
 
@@ -5732,6 +5794,8 @@ const videoma1BwqXPhOg: Video = {
   id: 'ma1BwqXPhOg',
   channel: channelTrashTasteAfterDark,
   title: 'The Uno Game That ALMOST Ended The Podcast | Trash Taste Stream #18',
+  titleShort: 'The Uno Game That ALMOST Ended The Podcast',
+  episodeNumber: 18,
   publishedAt: '2022-01-26T19:14:24Z',
   sections: {
     '00:00:00': 'Cat noises ASMR',
@@ -5757,6 +5821,7 @@ const videoma1BwqXPhOg: Video = {
     '02:33:51': "What we're doing next week",
   },
   tags: ['Streams', 'Twitch', 'uno', 'attack', 'challenge', 'meilyne'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoma1BwqXPhOg);
 
@@ -5764,6 +5829,8 @@ const videovlqUFXnAAqQ: Video = {
   id: 'vlqUFXnAAqQ',
   channel: channelTrashTasteAfterDark,
   title: 'This Is The Most Stupidly Hardest History Quiz | Trash Taste Stream #19',
+  titleShort: 'This Is The Most Stupidly Hardest History Quiz',
+  episodeNumber: 19,
   publishedAt: '2022-02-17T19:17:56Z',
   sections: {
     '00:00:00': 'Why we missed a few streams',
@@ -5803,6 +5870,7 @@ const videovlqUFXnAAqQ: Video = {
     '01:57:59': "What we're doing next week?",
   },
   tags: ['Streams', 'Twitch', 'quiz', 'hardest', 'history', 'challenge'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videovlqUFXnAAqQ);
 
@@ -5810,6 +5878,8 @@ const videoJaHkRosMISQ: Video = {
   id: 'JaHkRosMISQ',
   channel: channelTrashTasteAfterDark,
   title: 'We Became The Biggest Food Streamers | Trash Taste Stream #20',
+  titleShort: 'We Became The Biggest Food Streamers',
+  episodeNumber: 20,
   publishedAt: '2022-02-26T19:51:55Z',
   sections: {
     '00:00:00': 'Just smile and wave',
@@ -5838,6 +5908,7 @@ const videoJaHkRosMISQ: Video = {
     '02:08:28': "What we're doing next week",
   },
   tags: ['Streams', 'Twitch', 'food', 'stream', 'qna', 'figurine', 'statue', 'building', 'eating'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoJaHkRosMISQ);
 
@@ -5845,6 +5916,8 @@ const video9dZiDzhrvgg: Video = {
   id: '9dZiDzhrvgg',
   channel: channelTrashTasteAfterDark,
   title: 'RANKING AMERICAN GIRL SCOUT COOKIES | Trash Taste Stream #21',
+  titleShort: 'RANKING AMERICAN GIRL SCOUT COOKIES',
+  episodeNumber: 21,
   publishedAt: '2022-03-02T19:20:47Z',
   sections: {
     '00:00:00': 'Plan for today',
@@ -5886,6 +5959,7 @@ const video9dZiDzhrvgg: Video = {
     'rating',
     'biscuits',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video9dZiDzhrvgg);
 
@@ -5893,6 +5967,8 @@ const videot99Y40G8UBw: Video = {
   id: 't99Y40G8UBw',
   channel: channelTrashTasteAfterDark,
   title: 'We Tried To Guess Songs By Their Lyrics? | Trash Taste Stream #22',
+  titleShort: 'We Tried To Guess Songs By Their Lyrics?',
+  episodeNumber: 22,
   publishedAt: '2022-03-09T21:07:50Z',
   sections: {
     '00:00:00': 'The Potato guy',
@@ -5937,6 +6013,7 @@ const videot99Y40G8UBw: Video = {
     '02:11:40': "What's up next",
   },
   tags: ['Streams', 'Twitch', 'lyrics', 'music', 'songs', 'challenge', 'quiz', 'guess'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videot99Y40G8UBw);
 
@@ -5944,6 +6021,8 @@ const video3utUCKjNgbo: Video = {
   id: '3utUCKjNgbo',
   channel: channelTrashTasteAfterDark,
   title: 'We Took The ULTIMATE Gamer Test | Trash Taste Stream #23',
+  titleShort: 'We Took The ULTIMATE Gamer Test',
+  episodeNumber: 23,
   publishedAt: '2022-03-17T18:45:00Z',
   sections: {
     '00:00:00': 'We are GAMERS',
@@ -5992,6 +6071,7 @@ const video3utUCKjNgbo: Video = {
     'gta',
     'nintendo',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video3utUCKjNgbo);
 
@@ -5999,6 +6079,8 @@ const video4wwAHUkqdds: Video = {
   id: '4wwAHUkqdds',
   channel: channelTrashTasteAfterDark,
   title: 'We Know NOTHING About Anime Figures | Trash Taste Stream #24',
+  titleShort: 'We Know NOTHING About Anime Figures',
+  episodeNumber: 24,
   publishedAt: '2022-03-23T19:15:00Z',
   sections: {
     '00:00:00': "We're already back",
@@ -6035,6 +6117,7 @@ const video4wwAHUkqdds: Video = {
     '02:25:46': "Next week's plan",
   },
   tags: ['Streams', 'Twitch', 'figurine', 'quiz', 'price is right', 'challenge'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video4wwAHUkqdds);
 
@@ -6042,6 +6125,8 @@ const videoK3jybGGR7Kk: Video = {
   id: 'K3jybGGR7Kk',
   channel: channelTrashTasteAfterDark,
   title: 'We Role-played in an Isekai ft. @DEMONDICE | Trash Taste Stream #25',
+  titleShort: 'We Role-played in an Isekai ft. @DEMONDICE',
+  episodeNumber: 25,
   publishedAt: '2022-03-31T02:00:03Z',
   sections: {
     '00:00:00': "We're doing a Konosuba TRPG",
@@ -6110,6 +6195,7 @@ const videoK3jybGGR7Kk: Video = {
     'dnd',
     'tabletop',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoK3jybGGR7Kk);
 
@@ -6117,6 +6203,8 @@ const videoUQbT7ISWJgI: Video = {
   id: 'UQbT7ISWJgI',
   channel: channelTrashTasteAfterDark,
   title: 'Every Time We Fail, We Get a Punishment! | Trash Taste Charity Stream #1',
+  titleShort: 'Every Time We Fail, We Get a Punishment!',
+  episodeNumber: 1,
   publishedAt: '2022-04-06T17:15:00Z',
   sections: {
     '00:00:00': 'The longest 24 hours of our lives',
@@ -6144,6 +6232,7 @@ const videoUQbT7ISWJgI: Video = {
     '02:11:39': 'We got raided',
   },
   tags: ['Streams', 'Twitch', 'charity', 'extreme', 'jenga', 'sushi', 'punishment', '24-hour'],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoUQbT7ISWJgI);
 
@@ -6151,6 +6240,8 @@ const videogVIjtjfM_AQ: Video = {
   id: 'gVIjtjfM-AQ',
   channel: channelTrashTasteAfterDark,
   title: "Can We Guess What's In The Box? | Trash Taste Charity Stream #2",
+  titleShort: "Can We Guess What's In The Box?",
+  episodeNumber: 2,
   publishedAt: '2022-04-13T17:15:02Z',
   sections: {
     '00:00:00': 'Paying respect to the sigmas',
@@ -6229,6 +6320,7 @@ const videogVIjtjfM_AQ: Video = {
     'slimy',
     'lubed among us',
   ],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videogVIjtjfM_AQ);
 
@@ -6236,6 +6328,8 @@ const videoonjk8yo2JoQ: Video = {
   id: 'onjk8yo2JoQ',
   channel: channelTrashTasteAfterDark,
   title: 'The First Trash Taste Meme Review | Trash Taste Charity Stream #3',
+  titleShort: 'The First Trash Taste Meme Review',
+  episodeNumber: 3,
   publishedAt: '2022-04-20T17:15:01Z',
   sections: {
     '00:00:00': 'Reviewing top posts on our subreddit',
@@ -6269,6 +6363,7 @@ const videoonjk8yo2JoQ: Video = {
     '02:43:25': 'The mystery of cum',
   },
   tags: ['Streams', 'Twitch', 'meme review', 'first', 'official', 'subreddit', 'memes'],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoonjk8yo2JoQ);
 
@@ -6276,6 +6371,8 @@ const videoQPTRa5ilOBU: Video = {
   id: 'QPTRa5ilOBU',
   channel: channelTrashTasteAfterDark,
   title: 'We Got @Abroad in Japan To Guess Memes | Trash Taste Charity Stream #4',
+  titleShort: 'We Got @Abroad in Japan To Guess Memes',
+  episodeNumber: 4,
   publishedAt: '2022-04-27T17:15:01Z',
   sections: {
     '00:00:00': 'First official After Dark guest',
@@ -6330,6 +6427,7 @@ const videoQPTRa5ilOBU: Video = {
     'first guest',
     'memes',
   ],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoQPTRa5ilOBU);
 
@@ -6337,6 +6435,8 @@ const videocFf6jTKKivA: Video = {
   id: 'cFf6jTKKivA',
   channel: channelTrashTasteAfterDark,
   title: '@Abroad in Japan Crashed Our Spelling Bee | Trash Taste Charity Stream #5',
+  titleShort: '@Abroad in Japan Crashed Our Spelling Bee',
+  episodeNumber: 5,
   publishedAt: '2022-05-04T17:15:04Z',
   sections: {
     '00:00:00': 'Time for the Spelling Bee',
@@ -6417,6 +6517,7 @@ const videocFf6jTKKivA: Video = {
     'challenge',
     'ligma',
   ],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videocFf6jTKKivA);
 
@@ -6424,6 +6525,8 @@ const videoQT_Ygbx_65E: Video = {
   id: 'QT-Ygbx_65E',
   channel: channelTrashTasteAfterDark,
   title: 'We Cannot Laugh At Any Cost! | Trash Taste Charity Stream #6',
+  titleShort: 'We Cannot Laugh At Any Cost!',
+  episodeNumber: 6,
   publishedAt: '2022-05-11T18:15:01Z',
   sections: {
     '00:00:00': 'op',
@@ -6461,6 +6564,7 @@ const videoQT_Ygbx_65E: Video = {
     'abroad in japan',
     'chris broad',
   ],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoQT_Ygbx_65E);
 
@@ -6468,6 +6572,8 @@ const video_rndSz8bEt0: Video = {
   id: '_rndSz8bEt0',
   channel: channelTrashTasteAfterDark,
   title: 'Ironmouse Is Finally On Trash Taste! | Trash Taste Charity Stream #7',
+  titleShort: 'Ironmouse Is Finally On Trash Taste!',
+  episodeNumber: 7,
   publishedAt: '2022-05-18T17:15:03Z',
   sections: {
     '00:00:00': 'Ironmouse is finally on Trash Taste',
@@ -6541,14 +6647,19 @@ const video_rndSz8bEt0: Video = {
     '07:30:13': 'Thanks to everyone',
     '07:37:24': 'Final words',
   },
+  guests: [guestIronmouse],
   tags: ['Streams', 'Twitch', 'charity', 'ironmouse', 'vtuber', 'favorite', 'tungsten rat'],
+  type: 'Charity Stream',
 };
 channelTrashTasteAfterDark.videos.push(video_rndSz8bEt0);
+guestIronmouse.videos.push(video_rndSz8bEt0);
 
 const videouWquUXm9M_U: Video = {
   id: 'uWquUXm9M_U',
   channel: channelTrashTasteAfterDark,
   title: 'We Handled DANGEROUS Australian Wildlife | Trash Taste Stream #26',
+  titleShort: 'We Handled DANGEROUS Australian Wildlife',
+  episodeNumber: 26,
   publishedAt: '2022-07-23T18:15:01Z',
   sections: {
     '00:00:00': 'The boys are down under',
@@ -6608,6 +6719,7 @@ const videouWquUXm9M_U: Video = {
     'food',
     'dangerous',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videouWquUXm9M_U);
 
@@ -6624,6 +6736,8 @@ const videoTaZ9mZcHNeY: Video = {
   id: 'TaZ9mZcHNeY',
   channel: channelTrashTasteAfterDark,
   title: 'Could We Pass The American Citizenship Test? | Trash Taste Stream #28',
+  titleShort: 'Could We Pass The American Citizenship Test?',
+  episodeNumber: 28,
   publishedAt: '2022-08-11T20:22:53Z',
   sections: {
     '00:00:00': 'Murica!',
@@ -6660,6 +6774,7 @@ const videoTaZ9mZcHNeY: Video = {
     '01:49:27': 'Twitch raid',
   },
   tags: ['Streams', 'Twitch', 'america', 'test', 'citizenship', 'quiz'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoTaZ9mZcHNeY);
 
@@ -6667,6 +6782,8 @@ const videoY9i_1wfJbFs: Video = {
   id: 'Y9i_1wfJbFs',
   channel: channelTrashTasteAfterDark,
   title: 'Unboxing Fan Gifts From Anime Expo | Trash Taste Stream #27',
+  titleShort: 'Unboxing Fan Gifts From Anime Expo',
+  episodeNumber: 27,
   publishedAt: '2022-08-13T19:15:00Z',
   sections: {
     '00:00:00': 'After Dark is BACK',
@@ -6696,6 +6813,7 @@ const videoY9i_1wfJbFs: Video = {
     '01:30:12': "That's all, folks",
   },
   tags: ['Streams', 'Twitch', 'anime expo', 'fan gifts', 'gifts', 'unboxing', 'merch'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoY9i_1wfJbFs);
 
@@ -6703,6 +6821,8 @@ const video9HLMTcPfHNU: Video = {
   id: '9HLMTcPfHNU',
   channel: channelTrashTasteAfterDark,
   title: 'The WORST Pictionary Game Ever Played | Trash Taste Stream #29',
+  titleShort: 'The WORST Pictionary Game Ever Played',
+  episodeNumber: 29,
   publishedAt: '2022-08-17T20:00:02Z',
   sections: {
     '00:00:00': 'Thicc Sus',
@@ -6736,6 +6856,7 @@ const video9HLMTcPfHNU: Video = {
     '02:03:20': 'Raid',
   },
   tags: ['Streams', 'Twitch', 'pictionary', 'quiz', 'drawing', 'painting'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(video9HLMTcPfHNU);
 
@@ -6743,6 +6864,8 @@ const videoXdXeOd8f3MA: Video = {
   id: 'XdXeOd8f3MA',
   channel: channelTrashTasteAfterDark,
   title: 'Guessing Video Games By Sound Is IMPOSSIBLE | Trash Taste Stream #30',
+  titleShort: 'Guessing Video Games By Sound Is IMPOSSIBLE',
+  episodeNumber: 30,
   publishedAt: '2022-08-25T20:00:10Z',
   sections: {
     '00:00:00': 'Noises',
@@ -6801,6 +6924,7 @@ const videoXdXeOd8f3MA: Video = {
     'pokemon',
     'final fantasy',
   ],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videoXdXeOd8f3MA);
 
@@ -6808,6 +6932,8 @@ const videot89DEnhIuJI: Video = {
   id: 't89DEnhIuJI',
   channel: channelTrashTasteAfterDark,
   title: 'Tasting Wine From EVERY Country | Trash Taste Stream #31',
+  titleShort: 'Tasting Wine From EVERY Country',
+  episodeNumber: 31,
   publishedAt: '2022-09-07T20:00:24Z',
   sections: {
     '00:00:00': 'Why is a woman amongst men in the room?',
@@ -6834,9 +6960,12 @@ const videot89DEnhIuJI: Video = {
     '01:41:25': 'Random talking',
     '01:46:15': 'Who are we raiding?',
   },
+  guests: [guestsydsnap],
   tags: ['Streams', 'Twitch', 'wine', 'guessing', 'price', 'country', 'challenge'],
+  type: 'Stream',
 };
 channelTrashTasteAfterDark.videos.push(videot89DEnhIuJI);
+guestsydsnap.videos.push(videot89DEnhIuJI);
 
 export const channelTrashTasteHighlights: Channel = {
   id: 'UCry1ZVKLslbZXuQgsf-3TXg',
@@ -13620,6 +13749,7 @@ export const guests: Guest[] = [
   guestDaidus,
   guestEmirichu,
   guestGenoSamuel,
+  guestIronmouse,
   guestjacksepticeye,
   guestJessicaNigri,
   guestKenArto,

@@ -16,13 +16,16 @@ import type { Video } from '../../src/app/data/video';
 import type { Guest } from '../../src/app/data/guest';
 import type { Channel } from '../../src/app/data/channel';
 import { dataJsonPath } from '../collector';
-import { channels as channelConstants } from '../collector/channels';
+
+import { ManualData } from './manual-data';
 
 export function aggregate(): Rule {
-  return async (tree: Tree, _context: SchematicContext) => {
+  return async (tree: Tree, context: SchematicContext) => {
     const channels: Channel[] = [];
     const guests: Guest[] = [];
+    const videos: Video[] = [];
     const rawVideos: youtube_v3.Schema$Video[] = (tree.readJson(dataJsonPath) as any).videos;
+    const manualData: ManualData = tree.readJson('schematics/aggregator/manual-data.json') as any;
     for (const rawVideo of rawVideos) {
       const channelId = rawVideo.snippet!.channelId!;
       let channel = channels.find((c) => c.id === channelId);
@@ -39,16 +42,78 @@ export function aggregate(): Rule {
           id: rawVideo.id!,
           channel,
           title: rawVideo.snippet!.title!,
-          ...(channel.id === channelConstants['Trash Taste']
-            ? parseShortTitle(rawVideo.snippet!.title!)
-            : undefined),
+          ...parseShortTitle(rawVideo.snippet!.title!),
           publishedAt: rawVideo.snippet!.publishedAt!,
           tags: filterTags(rawVideo.snippet!.tags!),
           guests: findGuests(rawVideo, guests),
           sections: findSections(rawVideo),
         };
+        videos.push(video);
         channel.videos.push(video);
         video.guests?.forEach((g) => g.videos.push(video));
+      }
+    }
+
+    for (const [key, guestInfo] of Object.entries(manualData.guests)) {
+      let guest = guests.find((g) => g.id === key || g.name === key);
+      if (!guest) {
+        guest = {
+          id: guestId(guestInfo.name ?? key),
+          name: guestInfo.name ?? key,
+          ...guestInfo,
+          videos: [],
+        };
+        guests.push(guest);
+      } else {
+        const properties: Array<keyof Guest> = [
+          'instagram',
+          'spotify',
+          'tiktok',
+          'twitch',
+          'twitter',
+          'youtube',
+        ];
+        for (const property of properties) {
+          if (guestInfo[property]) {
+            guest[property] = guestInfo[property] as any;
+          }
+        }
+      }
+    }
+    for (let [
+      key,
+      { tags, guests: guestsInfo, sections, ...unsupportedProperties },
+    ] of Object.entries(manualData.videos)) {
+      const video = videos.find((v) => v.id === key);
+      if (!video) {
+        context.logger.warn(
+          `Video with id ${key} from manual-data.json does not exist in the data.`
+        );
+        break;
+      }
+      tags = Array.isArray(tags) ? tags.filter((t) => typeof t === 'string' && t) : undefined;
+      if (tags?.length) {
+        video.tags = video.tags ?? [];
+        video.tags.push(...tags);
+      }
+      guestsInfo = Array.isArray(guestsInfo)
+        ? guestsInfo
+            .map((gi) => guests.find((g) => g.id === gi.id || g.name === gi.name))
+            .filter((g): g is Guest => !!g)
+        : undefined;
+      if (guestsInfo?.length) {
+        video.guests = video.guests ?? [];
+        video.guests.push(...guestsInfo);
+      }
+      if (sections) {
+        video.sections = sections;
+      }
+      if (unsupportedProperties && Object.keys(unsupportedProperties).length) {
+        context.logger.warn(
+          `Video with id ${key} from manual-data.json has unsupported properties: ${Object.keys(
+            unsupportedProperties
+          ).join(', ')}`
+        );
       }
     }
 
@@ -88,20 +153,23 @@ export function aggregate(): Rule {
 function parseShortTitle(
   title: string
 ): Pick<Video, 'titleShort' | 'episodeNumber' | 'type'> | undefined {
-  const match = title.match(/^([\w\W]+?)( \(ft[^\)]+\))?( \| Trash Taste (Special|#(\d+)))$/);
+  const match = title.match(
+    /^([\w\W]+?)( \(ft[^\)]+\))?( \| Trash Taste( (Special|Stream|Charity Stream))?( #(\d+))?)$/
+  );
   if (!match) {
     return undefined;
   }
 
-  const titleShort = match[1];
-  const episodeNumber = +match[5];
+  const result: Pick<Video, 'titleShort' | 'episodeNumber' | 'type'> = { titleShort: match[1] };
+  const episodeNumber = +match[7];
   if (!isNaN(episodeNumber)) {
-    return { titleShort, episodeNumber };
-  } else if (match[4] === 'Special') {
-    return { titleShort, type: 'special' };
-  } else {
-    return { titleShort };
+    result.episodeNumber = episodeNumber;
   }
+  if (match[5] === 'Special' || match[5] === 'Stream' || match[5] === 'Charity Stream') {
+    result.type = match[5];
+  }
+
+  return result;
 }
 
 function filterTags(tags: string[]): string[] | undefined {
@@ -142,7 +210,7 @@ function findGuests(rawVideo: youtube_v3.Schema$Video, guests: Guest[]): Guest[]
   let guest = guests.find((g) => g.name === name);
   if (!guest) {
     guest = {
-      id: name.toLowerCase().replace(/[^a-z0-9_-]+/gi, '-'),
+      id: guestId(name),
       name,
       videos: [],
       ...findSocialMediaAccounts(rawVideo.snippet!.description!, name),
@@ -151,6 +219,10 @@ function findGuests(rawVideo: youtube_v3.Schema$Video, guests: Guest[]): Guest[]
   }
 
   return [guest];
+}
+
+function guestId(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9_-]+/gi, '-');
 }
 
 function findSocialMediaAccounts(

@@ -1,0 +1,16 @@
+<h3>{{ video.titleShort || video.title }}</h3>
+<p class="lead">
+  <time [dateTime]="video.publishedAt">{{ video.publishedAt | intlDate }}</time>
+  <span *ngIf="video.guests">
+    <ng-container *ngIf="video.guests.length === 1"
+      >Guest:
+      <a [routerLink]="['/guests', video.guests[0].id]">{{ video.guests[0].name }}</a></ng-container
+    >
+  </span>
+  <span>
+    Trash Taste
+    <ng-container *ngIf="video.type"> {{ video.type }}</ng-container>
+    <ng-container *ngIf="video.episodeNumber"> #{{ video.episodeNumber }}</ng-container>
+  </span>
+</p>
+<youtube-player [videoId]="video.id"></youtube-player>

@@ -11,5 +11,5 @@ export interface Video {
   sections?: Record<string, string>;
   guests?: Guest[];
   tags?: string[];
-  type?: 'special';
+  type?: 'Special' | 'Stream' | 'Charity Stream';
 }

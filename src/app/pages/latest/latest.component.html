@@ -1,7 +1,20 @@
-<article class="trash-taste">
-  <h1>{{ trashTaste.title }}</h1>
-  <p>
-    <time [dateTime]="trashTaste.publishedAt">{{ trashTaste.publishedAt | intlDate }}</time>
-  </p>
-  <youtube-player [videoId]="trashTaste.id"></youtube-player>
-</article>
+<h1>Trash Taste Latest Videos</h1>
+
+<div class="videos">
+  <div>
+    <h2>Trash Taste</h2>
+    <app-youtube-video class="trash-taste" [video]="trashTaste"></app-youtube-video>
+  </div>
+  <div>
+    <h2>Trash Taste After Dark</h2>
+    <app-youtube-video class="trash-taste-after-dark" [video]="afterDark"></app-youtube-video>
+  </div>
+  <div>
+    <h2>Trash Taste Highlights</h2>
+    <app-youtube-video class="trash-taste-highlights" [video]="highlights"></app-youtube-video>
+  </div>
+  <div>
+    <h2>Trash Taste Shorts</h2>
+    <app-youtube-video class="trash-taste-shorts" [video]="shorts"></app-youtube-video>
+  </div>
+</div>

@@ -27,6 +27,7 @@ __export(collector_exports, {
 });
 module.exports = __toCommonJS(collector_exports);
 var import_youtube = require('../../node_modules/@googleapis/youtube/build/index.js');
+var import_prettier = require('../../node_modules/prettier/index.js');
 
 // schematics/collector/channels.ts
 var channels = {
@@ -37,7 +38,6 @@ var channels = {
 };
 
 // schematics/collector/index.ts
-var import_prettier = require('../../node_modules/prettier/index.js');
 var dataJsonPath = 'schematics/collector/data.json';
 function collect() {
   return async (tree, context) => {

@@ -36,6 +36,8 @@ var require_package = __commonJS({
         start: 'ng serve',
         build: 'ng build',
         'build:schematics': 'node schematics/build.js',
+        'postbuild:schematics':
+          'typescript-json-schema --out=schematics/aggregator/manual-data.schema.json schematics/aggregator/manual-data.ts ManualData',
         watch: 'ng build --watch --configuration development',
         test: 'ng test',
         lint: 'ng lint',
@@ -90,6 +92,7 @@ var require_package = __commonJS({
         prettier: '^2.7.1',
         tsx: '^3.10.1',
         typescript: '~4.8.4',
+        'typescript-json-schema': '^0.54.0',
       },
       prettier: {
         singleQuote: true,
@@ -115,25 +118,17 @@ var import_prettier2 = require('../../node_modules/prettier/index.js');
 
 // schematics/collector/index.ts
 var import_youtube = require('../../node_modules/@googleapis/youtube/build/index.js');
-
-// schematics/collector/channels.ts
-var channels = {
-  'Trash Taste': 'UCcmxOGYGF51T1XsqQLewGtQ',
-  'Trash Taste Highlights': 'UCry1ZVKLslbZXuQgsf-3TXg',
-  'Trash Taste After Dark': 'UCKaN3mt53ATqRjzalb2ALFQ',
-  'Trash Taste Shorts': 'UCPohHVcDqBMmRLpUFwthAng',
-};
-
-// schematics/collector/index.ts
 var import_prettier = require('../../node_modules/prettier/index.js');
 var dataJsonPath = 'schematics/collector/data.json';
 
 // schematics/aggregator/index.ts
 function aggregate() {
-  return async (tree, _context) => {
+  return async (tree, context) => {
     const channels2 = [];
     const guests = [];
+    const videos = [];
     const rawVideos = tree.readJson(dataJsonPath).videos;
+    const manualData = tree.readJson('schematics/aggregator/manual-data.json');
     for (const rawVideo of rawVideos) {
       const channelId = rawVideo.snippet.channelId;
       let channel = channels2.find((c) => c.id === channelId);
@@ -150,16 +145,70 @@ function aggregate() {
           id: rawVideo.id,
           channel,
           title: rawVideo.snippet.title,
-          ...(channel.id === channels['Trash Taste']
-            ? parseShortTitle(rawVideo.snippet.title)
-            : void 0),
+          ...parseShortTitle(rawVideo.snippet.title),
           publishedAt: rawVideo.snippet.publishedAt,
           tags: filterTags(rawVideo.snippet.tags),
           guests: findGuests(rawVideo, guests),
           sections: findSections(rawVideo),
         };
+        videos.push(video);
         channel.videos.push(video);
         video.guests?.forEach((g) => g.videos.push(video));
+      }
+    }
+    for (const [key, guestInfo] of Object.entries(manualData.guests)) {
+      let guest = guests.find((g) => g.id === key || g.name === key);
+      if (!guest) {
+        guest = {
+          id: guestId(guestInfo.name ?? key),
+          name: guestInfo.name ?? key,
+          ...guestInfo,
+          videos: [],
+        };
+        guests.push(guest);
+      } else {
+        const properties = ['instagram', 'spotify', 'tiktok', 'twitch', 'twitter', 'youtube'];
+        for (const property of properties) {
+          if (guestInfo[property]) {
+            guest[property] = guestInfo[property];
+          }
+        }
+      }
+    }
+    for (let [
+      key,
+      { tags, guests: guestsInfo, sections, ...unsupportedProperties },
+    ] of Object.entries(manualData.videos)) {
+      const video = videos.find((v) => v.id === key);
+      if (!video) {
+        context.logger.warn(
+          `Video with id ${key} from manual-data.json does not exist in the data.`
+        );
+        break;
+      }
+      tags = Array.isArray(tags) ? tags.filter((t) => typeof t === 'string' && t) : void 0;
+      if (tags?.length) {
+        video.tags = video.tags ?? [];
+        video.tags.push(...tags);
+      }
+      guestsInfo = Array.isArray(guestsInfo)
+        ? guestsInfo
+            .map((gi) => guests.find((g) => g.id === gi.id || g.name === gi.name))
+            .filter((g) => !!g)
+        : void 0;
+      if (guestsInfo?.length) {
+        video.guests = video.guests ?? [];
+        video.guests.push(...guestsInfo);
+      }
+      if (sections) {
+        video.sections = sections;
+      }
+      if (unsupportedProperties && Object.keys(unsupportedProperties).length) {
+        context.logger.warn(
+          `Video with id ${key} from manual-data.json has unsupported properties: ${Object.keys(
+            unsupportedProperties
+          ).join(', ')}`
+        );
       }
     }
     guests.sort((a, b) => a.name.localeCompare(b.name));
@@ -193,19 +242,21 @@ function aggregate() {
   };
 }
 function parseShortTitle(title) {
-  const match = title.match(/^([\w\W]+?)( \(ft[^\)]+\))?( \| Trash Taste (Special|#(\d+)))$/);
+  const match = title.match(
+    /^([\w\W]+?)( \(ft[^\)]+\))?( \| Trash Taste( (Special|Stream|Charity Stream))?( #(\d+))?)$/
+  );
   if (!match) {
     return void 0;
   }
-  const titleShort = match[1];
-  const episodeNumber = +match[5];
+  const result = { titleShort: match[1] };
+  const episodeNumber = +match[7];
   if (!isNaN(episodeNumber)) {
-    return { titleShort, episodeNumber };
-  } else if (match[4] === 'Special') {
-    return { titleShort, type: 'special' };
-  } else {
-    return { titleShort };
+    result.episodeNumber = episodeNumber;
   }
+  if (match[5] === 'Special' || match[5] === 'Stream' || match[5] === 'Charity Stream') {
+    result.type = match[5];
+  }
+  return result;
 }
 function filterTags(tags) {
   const removableTags = [
@@ -243,7 +294,7 @@ function findGuests(rawVideo, guests) {
   let guest = guests.find((g) => g.name === name);
   if (!guest) {
     guest = {
-      id: name.toLowerCase().replace(/[^a-z0-9_-]+/gi, '-'),
+      id: guestId(name),
       name,
       videos: [],
       ...findSocialMediaAccounts(rawVideo.snippet.description, name),
@@ -251,6 +302,9 @@ function findGuests(rawVideo, guests) {
     guests.push(guest);
   }
   return [guest];
+}
+function guestId(name) {
+  return name.toLowerCase().replace(/[^a-z0-9_-]+/gi, '-');
 }
 function findSocialMediaAccounts(description, name) {
   const nameIndex = description.indexOf(name);

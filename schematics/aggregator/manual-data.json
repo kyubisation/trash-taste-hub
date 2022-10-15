@@ -1,0 +1,30 @@
+{
+  "$schema": "./manual-data.schema.json",
+  "guests": {
+    "ironmouse": {
+      "name": "Ironmouse",
+      "instagram": "https://www.instagram.com/ironmouseparty/",
+      "spotify": "https://open.spotify.com/artist/3rkwWB8rbBCNTrSvVUBa6C",
+      "tiktok": "https://www.tiktok.com/@ironmouse",
+      "twitch": "https://www.twitch.tv/ironmouse",
+      "twitter": "https://twitter.com/ironmouse",
+      "youtube": "https://www.youtube.com/c/ironmouseparty"
+    }
+  },
+  "videos": {
+    "t89DEnhIuJI": {
+      "guests": [
+        {
+          "name": "sydsnap"
+        }
+      ]
+    },
+    "_rndSz8bEt0": {
+      "guests": [
+        {
+          "name": "Ironmouse"
+        }
+      ]
+    }
+  }
+}

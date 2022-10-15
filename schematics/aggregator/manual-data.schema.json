@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Channel": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "videos": {
+          "items": {
+            "$ref": "#/definitions/Video"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "Guest": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "spotify": {
+          "type": "string"
+        },
+        "tiktok": {
+          "type": "string"
+        },
+        "twitch": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "videos": {
+          "items": {
+            "$ref": "#/definitions/Video"
+          },
+          "type": "array"
+        },
+        "youtube": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GuestsData": {
+      "additionalProperties": {
+        "$ref": "#/definitions/Partial<Guest>"
+      },
+      "type": "object"
+    },
+    "Partial<Guest>": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "spotify": {
+          "type": "string"
+        },
+        "tiktok": {
+          "type": "string"
+        },
+        "twitch": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "videos": {
+          "items": {
+            "$ref": "#/definitions/Video"
+          },
+          "type": "array"
+        },
+        "youtube": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Partial<Video>": {
+      "properties": {
+        "channel": {
+          "$ref": "#/definitions/Channel"
+        },
+        "episodeNumber": {
+          "type": "number"
+        },
+        "guests": {
+          "items": {
+            "$ref": "#/definitions/Guest"
+          },
+          "type": "array"
+        },
+        "id": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": "string"
+        },
+        "sections": {
+          "$ref": "#/definitions/Record<string,string>"
+        },
+        "tags": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleShort": {
+          "type": "string"
+        },
+        "type": {
+          "enum": ["Charity Stream", "Special", "Stream"],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Record<string,string>": {
+      "type": "object"
+    },
+    "Video": {
+      "properties": {
+        "channel": {
+          "$ref": "#/definitions/Channel"
+        },
+        "episodeNumber": {
+          "type": "number"
+        },
+        "guests": {
+          "items": {
+            "$ref": "#/definitions/Guest"
+          },
+          "type": "array"
+        },
+        "id": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": "string"
+        },
+        "sections": {
+          "$ref": "#/definitions/Record<string,string>"
+        },
+        "tags": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleShort": {
+          "type": "string"
+        },
+        "type": {
+          "enum": ["Charity Stream", "Special", "Stream"],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "VideosData": {
+      "additionalProperties": {
+        "$ref": "#/definitions/Partial<Video>"
+      },
+      "type": "object"
+    }
+  },
+  "properties": {
+    "guests": {
+      "$ref": "#/definitions/GuestsData"
+    },
+    "videos": {
+      "$ref": "#/definitions/VideosData"
+    }
+  },
+  "type": "object"
+}
