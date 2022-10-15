@@ -2,7 +2,17 @@
   display: inline-block;
 }
 
-.lead {
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+small {
+  white-space: nowrap;
+}
+
+.details {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
