@@ -1,12 +1,42 @@
-<h3>
-  {{ video.titleShort || video.title }}
+<div class="head">
+  <h3>
+    {{ video.titleShort || video.title }}
+  </h3>
+  <ng-container *ngIf="video.chapters">
+    <button
+      mat-icon-button
+      aria-label="Select a video chapter to play"
+      matTooltip="Video chapters"
+      matTooltipPosition="after"
+      [matMenuTriggerFor]="menu"
+    >
+      <mat-icon>bookmarks</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button
+        *ngFor="let entry of chapters; trackBy: trackSectionBy"
+        mat-menu-item
+        (click)="playFrom(entry.key)"
+      >
+        {{ entry.value }}
+      </button>
+    </mat-menu>
+  </ng-container>
+  <span class="spacer"></span>
   <small *ngIf="video.episodeNumber || video.type"
     >Trash Taste
     <ng-container *ngIf="video.type"> {{ video.type }}</ng-container>
     <ng-container *ngIf="video.episodeNumber"> #{{ video.episodeNumber }}</ng-container></small
   >
-</h3>
-<youtube-player [videoId]="video.id"></youtube-player>
+</div>
+<div class="player" [style.background-image]="(isVisible | async) ? preview : null">
+  <youtube-player
+    *ngIf="isVisible | async"
+    #player
+    [videoId]="video.id"
+    (stateChange)="handleStateChange($event)"
+  ></youtube-player>
+</div>
 <div class="details">
   <time [dateTime]="video.publishedAt">{{ video.publishedAt | intlDate }}</time>
   <span *ngIf="video.guests">

@@ -46,7 +46,7 @@ export function aggregate(): Rule {
           publishedAt: rawVideo.snippet!.publishedAt!,
           tags: filterTags(rawVideo.snippet!.tags!),
           guests: findGuests(rawVideo, guests),
-          sections: findSections(rawVideo),
+          chapters: findChapters(rawVideo),
         };
         videos.push(video);
         channel.videos.push(video);
@@ -82,7 +82,7 @@ export function aggregate(): Rule {
     }
     for (let [
       key,
-      { tags, guests: guestsInfo, sections, ...unsupportedProperties },
+      { tags, guests: guestsInfo, chapters, ...unsupportedProperties },
     ] of Object.entries(manualData.videos)) {
       const video = videos.find((v) => v.id === key);
       if (!video) {
@@ -105,8 +105,8 @@ export function aggregate(): Rule {
         video.guests = video.guests ?? [];
         video.guests.push(...guestsInfo);
       }
-      if (sections) {
-        video.sections = sections;
+      if (chapters) {
+        video.chapters = chapters;
       }
       if (unsupportedProperties && Object.keys(unsupportedProperties).length) {
         context.logger.warn(
@@ -131,6 +131,8 @@ export function aggregate(): Rule {
           guestVariable: (guest: Guest) => `guest${guest.name.replace(/[^a-zA-Z0-9]+/g, '')}`,
           videoVariable: (video: Video) => `video${video.id.replace(/[^a-zA-Z0-9]+/g, '_')}`,
           escapeQuote: (value: string) => value.replace(/'/g, `\\'`),
+          latestVideoVariable: (channel: Channel) =>
+            `latest${channel.name.replace(/[^a-zA-Z0-9]+/g, '')}`,
         }),
         move('src/app/data'),
         forEach((fileEntry) => {
@@ -265,14 +267,19 @@ function findSocialMediaAccounts(
   return result;
 }
 
-function findSections(rawVideo: youtube_v3.Schema$Video): Record<string, string> | undefined {
+function findChapters(rawVideo: youtube_v3.Schema$Video): Record<number, string> | undefined {
   const matches = Array.from(
     rawVideo.snippet!.description!.matchAll(/((\d{1,2}:)?\d{1,2}:\d{1,2}) ([^\n]+)\n?/g)
   );
+  const toSeconds = (value: string) => {
+    const [seconds, minutes, hours] = value.split(':').reverse();
+    return +seconds + (+minutes || 0) * 60 + (+hours || 0) * 3600;
+  };
   return matches.length
     ? matches.reduce(
-        (current, next) => Object.assign(current, { [next[1]]: next[3].replace(/^- /, '').trim() }),
-        {} as Record<string, string>
+        (current, next) =>
+          Object.assign(current, { [toSeconds(next[1])]: next[3].replace(/^- /, '').trim() }),
+        {} as Record<number, string>
       )
     : undefined;
 }

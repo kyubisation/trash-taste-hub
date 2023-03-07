@@ -1,16 +1,15 @@
 import { NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import {
-  channelTrashTaste,
-  channelTrashTasteAfterDark,
-  channelTrashTasteHighlights,
-  channelTrashTasteShorts,
+  latestTrashTaste,
+  latestTrashTasteAfterDark,
+  latestTrashTasteHighlights,
+  latestTrashTasteShorts,
 } from '../../data';
 import { IntlDatePipe } from '../../shared/intl-date.pipe';
 import { YoutubeVideoComponent } from '../../shared/youtube-video/youtube-video.component';
-import { YoutubeService } from '../../shared/youtube.service';
 
 @Component({
   selector: 'app-latest',
@@ -20,15 +19,9 @@ import { YoutubeService } from '../../shared/youtube.service';
   styleUrls: ['./latest.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LatestComponent implements OnInit {
-  trashTaste = channelTrashTaste.videos.at(-1)!;
-  afterDark = channelTrashTasteAfterDark.videos.at(-1)!;
-  highlights = channelTrashTasteHighlights.videos.at(-1)!;
-  shorts = channelTrashTasteShorts.videos.at(-1)!;
-
-  constructor(private _youtubeService: YoutubeService) {}
-
-  ngOnInit(): void {
-    this._youtubeService.assertYoutubeApi();
-  }
+export class LatestComponent {
+  trashTaste = latestTrashTaste;
+  afterDark = latestTrashTasteAfterDark;
+  highlights = latestTrashTasteHighlights;
+  shorts = latestTrashTasteShorts;
 }

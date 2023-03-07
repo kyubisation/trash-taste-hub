@@ -99,6 +99,15 @@
         "channel": {
           "$ref": "#/definitions/Channel"
         },
+        "chapters": {
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+$": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
         "episodeNumber": {
           "type": "number"
         },
@@ -113,9 +122,6 @@
         },
         "publishedAt": {
           "type": "string"
-        },
-        "sections": {
-          "$ref": "#/definitions/Record<string,string>"
         },
         "tags": {
           "items": {
@@ -136,13 +142,19 @@
       },
       "type": "object"
     },
-    "Record<string,string>": {
-      "type": "object"
-    },
     "Video": {
       "properties": {
         "channel": {
           "$ref": "#/definitions/Channel"
+        },
+        "chapters": {
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9]+$": {
+              "type": "string"
+            }
+          },
+          "type": "object"
         },
         "episodeNumber": {
           "type": "number"
@@ -158,9 +170,6 @@
         },
         "publishedAt": {
           "type": "string"
-        },
-        "sections": {
-          "$ref": "#/definitions/Record<string,string>"
         },
         "tags": {
           "items": {

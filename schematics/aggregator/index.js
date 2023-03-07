@@ -149,7 +149,7 @@ function aggregate() {
           publishedAt: rawVideo.snippet.publishedAt,
           tags: filterTags(rawVideo.snippet.tags),
           guests: findGuests(rawVideo, guests),
-          sections: findSections(rawVideo),
+          chapters: findChapters(rawVideo),
         };
         videos.push(video);
         channel.videos.push(video);
@@ -177,7 +177,7 @@ function aggregate() {
     }
     for (let [
       key,
-      { tags, guests: guestsInfo, sections, ...unsupportedProperties },
+      { tags, guests: guestsInfo, chapters, ...unsupportedProperties },
     ] of Object.entries(manualData.videos)) {
       const video = videos.find((v) => v.id === key);
       if (!video) {
@@ -200,8 +200,8 @@ function aggregate() {
         video.guests = video.guests ?? [];
         video.guests.push(...guestsInfo);
       }
-      if (sections) {
-        video.sections = sections;
+      if (chapters) {
+        video.chapters = chapters;
       }
       if (unsupportedProperties && Object.keys(unsupportedProperties).length) {
         context.logger.warn(
@@ -223,6 +223,7 @@ function aggregate() {
           guestVariable: (guest) => `guest${guest.name.replace(/[^a-zA-Z0-9]+/g, '')}`,
           videoVariable: (video) => `video${video.id.replace(/[^a-zA-Z0-9]+/g, '_')}`,
           escapeQuote: (value) => value.replace(/'/g, `\\'`),
+          latestVideoVariable: (channel) => `latest${channel.name.replace(/[^a-zA-Z0-9]+/g, '')}`,
         }),
         (0, import_schematics.move)('src/app/data'),
         (0, import_schematics.forEach)((fileEntry) => {
@@ -340,13 +341,18 @@ function findSocialMediaAccounts(description, name) {
   }
   return result;
 }
-function findSections(rawVideo) {
+function findChapters(rawVideo) {
   const matches = Array.from(
     rawVideo.snippet.description.matchAll(/((\d{1,2}:)?\d{1,2}:\d{1,2}) ([^\n]+)\n?/g)
   );
+  const toSeconds = (value) => {
+    const [seconds, minutes, hours] = value.split(':').reverse();
+    return +seconds + (+minutes || 0) * 60 + (+hours || 0) * 3600;
+  };
   return matches.length
     ? matches.reduce(
-        (current, next) => Object.assign(current, { [next[1]]: next[3].replace(/^- /, '').trim() }),
+        (current, next) =>
+          Object.assign(current, { [toSeconds(next[1])]: next[3].replace(/^- /, '').trim() }),
         {}
       )
     : void 0;

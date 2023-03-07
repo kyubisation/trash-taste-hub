@@ -29,9 +29,9 @@ const <%= videoVariable(video) %>: Video = {
   title: '<%= escapeQuote(video.title) %>',<% if (video.titleShort) { %>
   titleShort: '<%= escapeQuote(video.titleShort) %>',<% } %><% if (video.episodeNumber) { %>
   episodeNumber: <%= video.episodeNumber %>,<% } %>
-  publishedAt: '<%= video.publishedAt %>',<% if (video.sections) { %>
-  sections: {<% for (const [key, value] of Object.entries(video.sections)) { %>
-    '<%= key %>': '<%= escapeQuote(value) %>',<% } %>
+  publishedAt: '<%= video.publishedAt %>',<% if (video.chapters) { %>
+  chapters: {<% for (const [key, value] of Object.entries(video.chapters)) { %>
+    <%= key %>: '<%= escapeQuote(value) %>',<% } %>
   },<% } %><% if (video.guests) { %>
   guests: [<% for (const guest of video.guests) { %>
     <%= guestVariable(guest) %>,<% } %>
@@ -44,6 +44,7 @@ const <%= videoVariable(video) %>: Video = {
 <%= channelVariable(channel) %>.videos.push(<%= videoVariable(video) %>);<% for (const guest of (video.guests ?? [])) { %>
 <%= guestVariable(guest) %>.videos.push(<%= videoVariable(video) %>);<% } %>
 <% } %>
+export const <%= latestVideoVariable(channel) %> = <%= videoVariable(channel.videos.at(-1)) %>;
 <% } %>
 
 // Exports

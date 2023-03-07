@@ -23,13 +23,24 @@
   >
     <mat-nav-list>
       <a mat-list-item routerLink="/">Latest Videos</a>
-      <a mat-list-item routerLink="/youtube/trash-taste"
+      <a mat-list-item routerLink="/youtube-channel/trash-taste"
         ><img class="icon" src="assets/youtube_icon.png" /> Trash Taste</a
+      >
+      <a mat-list-item routerLink="/youtube-channel/trash-taste-after-dark"
+        ><img class="icon" src="assets/youtube_icon.png" /> Trash Taste After Dark</a
+      >
+      <a mat-list-item routerLink="/youtube-channel/trash-taste-highlights"
+        ><img class="icon" src="assets/youtube_icon.png" /> Trash Taste Highlights</a
+      >
+      <a mat-list-item routerLink="/youtube-channel/trash-taste-shorts"
+        ><img class="icon" src="assets/youtube_icon.png" /> Trash Taste Shorts</a
       >
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content role="main">
-    <router-outlet></router-outlet>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

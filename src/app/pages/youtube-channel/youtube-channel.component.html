@@ -1,0 +1,56 @@
+<ng-container *ngIf="channel | async as state" [ngSwitch]="state">
+  <mat-spinner *ngSwitchCase="'loading'"></mat-spinner>
+  <ng-container *ngSwitchCase="'not-found'">
+    <h1>Channel not found</h1>
+
+    <p>How did you get here?</p>
+  </ng-container>
+  <ng-container *ngSwitchCase="'error'">
+    <h1>Something went wrong?</h1>
+
+    <p>Unfortunately something broke. Maybe try again or wait a moment?</p>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <h1>{{ $any(state).name }}</h1>
+
+    <form [formGroup]="filter">
+      <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput formControlName="search" />
+        <button
+          *ngIf="filter.controls.search.value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="filter.controls.search.setValue('')"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Sort order</mat-label>
+        <mat-select formControlName="order">
+          <mat-option value="asc">Date ascending</mat-option>
+          <mat-option value="desc">Date descending</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Guest</mat-label>
+        <mat-select formControlName="guest">
+          <mat-option value=""></mat-option>
+          <mat-option value="-"><em>No guest</em></mat-option>
+          <mat-option *ngFor="let guest of guests" [value]="guest.id">{{ guest.name }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+
+    <small>{{ countDisplayedVideos($any(state)) }} Videos</small>
+    <div class="videos">
+      <app-youtube-video
+        *ngFor="let video of $any(state).videos; trackBy: trackVideoBy"
+        [class.hidden]="!video.isShown"
+        [video]="video"
+      ></app-youtube-video>
+    </div>
+  </ng-container>
+</ng-container>

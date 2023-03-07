@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hidden {
+  display: none;
+}

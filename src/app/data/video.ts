@@ -8,7 +8,7 @@ export interface Video {
   titleShort?: string;
   episodeNumber?: number;
   publishedAt: string;
-  sections?: Record<string, string>;
+  chapters?: { [time: number]: string };
   guests?: Guest[];
   tags?: string[];
   type?: 'Special' | 'Stream' | 'Charity Stream';

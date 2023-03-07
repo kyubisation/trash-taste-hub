@@ -37,9 +37,10 @@ mat-sidenav[role='navigation'] {
 .icon {
   height: 1em;
   vertical-align: middle;
+  margin-inline-end: 0.5rem;
 }
 
-mat-sidenav-content {
+.content {
   padding: 1rem;
   min-height: calc(100vh - var(--tt-navbar-height));
 }
